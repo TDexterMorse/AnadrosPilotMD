@@ -30,7 +30,7 @@ processing [insulin.pdb] (1/1)
 [INFO] PocketPredictor - FILTERED CLUSTERS: 1
 [INFO] PocketPredictor - pocket 1 -  surf_atoms:  10   points:   4   score:    0.9
 [INFO] OldPymolRenderer - copying [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/insulin.pdb] to [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin/visualizations/data/insulin.pdb]
-[INFO] Console - predicting pockets finished in 0 hours 0 minutes 6.727 seconds
+[INFO] Console - predicting pockets finished in 0 hours 0 minutes 7.170 seconds
 [INFO] Console - results saved to directory [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin]
 [INFO] Console - 
-[INFO] Console - Finished successfully in 0 hours 0 minutes 8.380 seconds.
+[INFO] Console - Finished successfully in 0 hours 0 minutes 8.812 seconds.

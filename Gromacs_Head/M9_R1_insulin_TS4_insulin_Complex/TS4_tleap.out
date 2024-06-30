@@ -77,16 +77,8 @@ Atom names in each residue should be unique.
 Checking Unit.
 
 /Users/dmorse/miniconda3/bin/teLeap: Warning!
-There is a bond of 3.803 angstroms between C1 and H atoms:
--------  .R<TS4 350>.A<C1 12> and .R<TS4 350>.A<H 13>
-
-/Users/dmorse/miniconda3/bin/teLeap: Warning!
-There is a bond of 4.008 angstroms between C and C1 atoms:
+There is a bond of 0.309 angstroms between C and C1 atoms:
 -------  .R<TS4 350>.A<C 11> and .R<TS4 350>.A<C1 12>
-
-/Users/dmorse/miniconda3/bin/teLeap: Warning!
-There is a bond of 3.947 angstroms between C and C5 atoms:
--------  .R<TS4 350>.A<C 11> and .R<TS4 350>.A<C5 20>
 
 /Users/dmorse/miniconda3/bin/teLeap: Warning!
 The unperturbed charge of the unit (6.998999) is not zero.
@@ -124,4 +116,4 @@ Marking per-residue atom chain types.
  (no restraints)
 	Quit
 
-Exiting LEaP: Errors = 0; Warnings = 5; Notes = 1.
+Exiting LEaP: Errors = 0; Warnings = 3; Notes = 1.

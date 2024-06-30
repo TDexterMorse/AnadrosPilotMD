@@ -55,7 +55,7 @@ Command line:
   gmx editconf -f gromacs.gro -o newbox.gro -bt cubic -d 2.0 -c
 
 
-GROMACS reminds you: "FORTRAN, the infantile disorder, by now nearly 20 years old, is hopelessly inadequate for whatever computer application you have in mind today: it is now too clumsy, too risky, and too expensive to use." (Edsger Dijkstra, 1970)
+GROMACS reminds you: "I never thought about breaking barriers, I was just interested in what I was doing and kept going." (Barbara Liskov)
 
 Note that major changes are planned in future for editconf, to improve usability and utility.
 Read 5455 atoms
@@ -63,11 +63,11 @@ Volume: 1120.22 nm^3, corresponds to roughly 504000 electrons
 No velocities found
     system size : 12.690  6.109 12.351 (nm)
     diameter    : 16.732               (nm)
-    center      : -1.042 -0.611  0.417 (nm)
+    center      : -1.043 -0.613  0.420 (nm)
     box vectors : 13.189  6.609 12.851 (nm)
     box angles  :  90.00  90.00  90.00 (degrees)
     box volume  :1120.22               (nm^3)
-    shift       : 11.408 10.977  9.949 (nm)
+    shift       : 11.409 10.979  9.946 (nm)
 new center      : 10.366 10.366 10.366 (nm)
 new box vectors : 20.732 20.732 20.732 (nm)
 new box angles  :  90.00  90.00  90.00 (degrees)
@@ -108,7 +108,7 @@ Generating solvent configuration
 Will generate new solvent configuration of 12x12x12 boxes
 Solvent box contains 934047 atoms in 311349 residues
 Removed 54624 solvent atoms due to solvent-solvent overlap
-Removed 5574 solvent atoms due to solute-solvent overlap
+Removed 5559 solvent atoms due to solute-solvent overlap
 Sorting configuration
 Found 1 molecule type:
     SOL (   3 atoms): 10000 residues
@@ -124,7 +124,7 @@ Processing topology
 
 Back Off! I just backed up gromacs.top to ./#gromacs.top.1#
 
-GROMACS reminds you: "You Could Make More Money As a Butcher" (F. Zappa)
+GROMACS reminds you: "Give a Man a Fish" (Arrested Development)
 
 Adding line for 10000 solvent molecules with resname (SOL) to topology file (gromacs.top)
 ############## Neutralize Charge ######################
@@ -177,9 +177,9 @@ There were 3 NOTEs
 
 There was 1 WARNING
 
-GROMACS reminds you: "You Could Make More Money As a Butcher" (F. Zappa)
+GROMACS reminds you: "Give a Man a Fish" (Arrested Development)
 
-Setting the LD random seed to 1317436287
+Setting the LD random seed to 771745592
 
 Generated 1326 of the 1326 non-bonded parameter combinations
 
@@ -228,17 +228,17 @@ Group    16 (      non-Water) has  5455 elements
 Select a group: Number of (3-atomic) solvent molecules: 10000
 
 Back Off! I just backed up gromacs.top to ./#gromacs.top.2#
-Using random seed 2147200495.
-Replacing solvent molecule 3798 (atom 16849) with CL
-Replacing solvent molecule 7164 (atom 26947) with CL
-Replacing solvent molecule 3901 (atom 17158) with CL
-Replacing solvent molecule 3170 (atom 14965) with CL
-Replacing solvent molecule 8886 (atom 32113) with CL
-Replacing solvent molecule 1715 (atom 10600) with CL
-Replacing solvent molecule 1310 (atom 9385) with CL
+Using random seed -12724325.
+Replacing solvent molecule 5338 (atom 21469) with CL
+Replacing solvent molecule 5644 (atom 22387) with CL
+Replacing solvent molecule 2508 (atom 12979) with CL
+Replacing solvent molecule 5994 (atom 23437) with CL
+Replacing solvent molecule 7596 (atom 28243) with CL
+Replacing solvent molecule 2609 (atom 13282) with CL
+Replacing solvent molecule 3568 (atom 16159) with CL
 
 
-GROMACS reminds you: "You Could Make More Money As a Butcher" (F. Zappa)
+GROMACS reminds you: "Give a Man a Fish" (Arrested Development)
 
 Will try to add 0 NA ions and 7 CL ions.
 Select a continuous group of solvent molecules
@@ -306,7 +306,7 @@ WARNING 3 [file gromacs.top, line 60301]:
   neutralize your system with counter ions, possibly in combination with a
   physiological salt concentration.
 
-Setting the LD random seed to -542378497
+Setting the LD random seed to -67111233
 
 Generated 1326 of the 1326 non-bonded parameter combinations
 
@@ -347,7 +347,7 @@ There were 5 NOTEs
 
 There were 3 WARNINGs
 
-GROMACS reminds you: "You Could Make More Money As a Butcher" (F. Zappa)
+GROMACS reminds you: "Give a Man a Fish" (Arrested Development)
 
 Analysing residue names:
 There are:   349    Protein residues
@@ -357,7 +357,7 @@ There are:     7        Ion residues
 Analysing Protein...
 Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
 
-The largest distance between non-perturbed excluded atoms is 0.663 nm between atom 5441 and 5451
+The largest distance between non-perturbed excluded atoms is 0.465 nm between atom 607 and 612
 Calculating fourier grid dimensions for X Y Z
 Using a fourier grid of 192x192x192, spacing 0.108 0.108 0.108
 

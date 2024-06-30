@@ -1,4 +1,4 @@
-log started: Sun Jun 30 17:44:03 2024
+log started: Sun Jun 30 19:15:33 2024
 
 Log file: ./leap.log
 >> #
@@ -220,7 +220,7 @@ Loading: NVAL
 ----- Source: /Users/dmorse/miniconda3/dat/leap/cmd/leaprc.gaff
 ----- Source of /Users/dmorse/miniconda3/dat/leap/cmd/leaprc.gaff done
 >> logFile leap.log
-log started: Sun Jun 30 17:44:03 2024
+log started: Sun Jun 30 19:15:33 2024
 
 Log file: ./leap.log
 >> #
@@ -569,16 +569,8 @@ Mapped residue ALA, term: Terminal/last, seq. number: 348 to: CALA.
 Checking Unit.
 
 /Users/dmorse/miniconda3/bin/teLeap: Warning!
-There is a bond of 3.803 angstroms between C1 and H atoms:
--------  .R<TS4 350>.A<C1 12> and .R<TS4 350>.A<H 13>
-
-/Users/dmorse/miniconda3/bin/teLeap: Warning!
-There is a bond of 4.008 angstroms between C and C1 atoms:
+There is a bond of 0.309 angstroms between C and C1 atoms:
 -------  .R<TS4 350>.A<C 11> and .R<TS4 350>.A<C1 12>
-
-/Users/dmorse/miniconda3/bin/teLeap: Warning!
-There is a bond of 3.947 angstroms between C and C5 atoms:
--------  .R<TS4 350>.A<C 11> and .R<TS4 350>.A<C5 20>
 
 /Users/dmorse/miniconda3/bin/teLeap: Warning!
 The unperturbed charge of the unit (6.998999) is not zero.
@@ -617,4 +609,4 @@ Marking per-residue atom chain types.
 > quit  
 	Quit
 
-Exiting LEaP: Errors = 0; Warnings = 5; Notes = 1.
+Exiting LEaP: Errors = 0; Warnings = 3; Notes = 1.

@@ -5,7 +5,7 @@ BASE=$(pwd)
 
 #Cleanup
 # Delete non-executable files with specific suffixes recursively
-find . -maxdepth 2 -type f ! -name '*.sh' ! -name '*.py' ! -name '*.md' ! -name '*.txt' ! -name 'tyrosinase.pdb' ! -name '3HTB_clean.pdb' ! -name 'test.pdb' ! -name 'insulin.pdb' -delete
+find . -maxdepth 2 -type f ! -name '*.sh' ! -name '*.py' ! -name '*.md' ! -name '*.txt' ! -name 'insulin.pdb' -delete
 
 # Set up paths
 
