@@ -1,0 +1,65 @@
+# This file was created Mon Apr 22 21:46:57 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+# 
+# Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+# Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+# Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/essentialdynamics/linacc
+# Command line:
+#   gmx mdrun -ei sam.edi -eo linacc.xvg
+# gmx mdrun is part of G R O M A C S:
+#
+# GROMACS
+#
+@    title "Essential dynamics / flooding output"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "RMSDs (nm), projections on EVs (nm), ..."
+@TYPE xy
+# Output will be written every 2 steps
+#
+# Summary of applied con/restraints for the ED group  
+# Atoms in average structure: 4
+#    monitor  : 0 vecs
+#    LINFIX   : 0 vecs
+#    LINACC   : 1 vec
+#    RADFIX   : 0 vecs
+#    RADACC   : 0 vecs
+#    RADCON   : 0 vecs
+#    FLOODING : 0 vecs  
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "  RMSD to ref (nm)"
+@ s1 legend "  EV1prjLINACC (nm)"
+#
+# Legend for 0 columns of flooding plus 2 columns of essential dynamics data:
+#       time      RMSD to ref     EV1prjLINACC
+    0.000000         0.000379     -1.29541e-02
+    0.002000         0.001151     -1.28053e-02
+    0.004000         0.001733     -1.27083e-02
+    0.006000         0.002101     -1.26806e-02
+    0.008000         0.002327     -1.26806e-02
+    0.010000         0.002568     -1.26806e-02
+    0.012000         0.002946     -1.26806e-02
+    0.014000         0.003442     -1.26806e-02
+    0.016000         0.003952     -1.26806e-02
+    0.018000         0.004394     -1.26806e-02
+    0.020000         0.004754     -1.26806e-02
+    0.022000         0.005064     -1.26806e-02
+    0.024000         0.005358     -1.26806e-02
+    0.026000         0.005640     -1.25422e-02
+    0.028000         0.005896     -1.24345e-02
+    0.030000         0.006103     -1.23737e-02
+    0.032000         0.006238     -1.23626e-02
+    0.034000         0.006294     -1.23626e-02
+    0.036000         0.006280     -1.23626e-02
+    0.038000         0.006214     -1.23626e-02
+    0.040000         0.006109     -1.23626e-02
+    0.042000         0.005971     -1.23626e-02
+    0.044000         0.005797     -1.23626e-02
+    0.046000         0.005575     -1.23626e-02
+    0.048000         0.005297     -1.23626e-02
+    0.050000         0.004962     -1.23626e-02

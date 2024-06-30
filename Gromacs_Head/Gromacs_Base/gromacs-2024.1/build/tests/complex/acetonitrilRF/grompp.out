@@ -1,0 +1,19 @@
+Generated 6 of the 6 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+turning all bonds into constraints...
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:   526      Water residues
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 298 K
+
+Calculated rlist for 1x1 atom pair-list as 1.007 nm, buffer size 0.007 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.004 nm, buffer size 0.004 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+This run will generate roughly 0 Mb of data

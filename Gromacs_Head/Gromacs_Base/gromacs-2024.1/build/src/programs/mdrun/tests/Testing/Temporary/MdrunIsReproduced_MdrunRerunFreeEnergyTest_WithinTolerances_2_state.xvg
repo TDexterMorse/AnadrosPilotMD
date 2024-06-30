@@ -1,0 +1,37 @@
+# This file was created Mon Apr 22 21:35:53 2024
+# Created by:
+#              :-) GROMACS - mdrun-non-integrator-test, 2024.1 (-:
+# 
+# Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/mdrun-non-integrator-test
+# Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+# Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/programs/mdrun/tests
+# Command line:
+#   mdrun-non-integrator-test -ntomp 2 --gtest_output=xml:/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/Testing/Temporary/MdrunNonIntegratorTests.xml
+# mdrun-non-integrator-test is part of G R O M A C S:
+#
+# Great Red Oystrich Makes All Chemists Sane
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "\xl\f{} state 2: (mass-lambda, coul-lambda, vdw-lambda, bonded-lambda, restraint-lambda) = (1.0000, 0.0000, 0.0000, 0.0000, 0.0000)"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "dH/d\xl\f{} mass-lambda = 1.0000"
+@ s1 legend "dH/d\xl\f{} coul-lambda = 0.0000"
+@ s2 legend "dH/d\xl\f{} vdw-lambda = 0.0000"
+@ s3 legend "dH/d\xl\f{} bonded-lambda = 0.0000"
+@ s4 legend "dH/d\xl\f{} restraint-lambda = 0.0000"
+@ s5 legend "\xD\f{}H \xl\f{} to (0.5000, 0.0000, 0.0000, 0.0000, 0.0000)"
+@ s6 legend "\xD\f{}H \xl\f{} to (1.0000, 0.0000, 0.0000, 0.0000, 0.0000)"
+@ s7 legend "\xD\f{}H \xl\f{} to (1.0000, 0.0000, 0.0000, 0.5000, 0.0000)"
+0.0000 0.0000000 0.0000000 0.0000000 2.8035736 87.168289 0.0000000 0.0000000 1.4017868
+0.0040 0.0000000 0.0000000 0.0000000 10.502105 86.376991 0.0000000 0.0000000 5.2510521
+0.0080 0.0000000 0.0000000 0.0000000 21.799520 84.794655 0.0000000 0.0000000 10.899760
+0.0120 0.0000000 0.0000000 0.0000000 32.671417 82.162872 0.0000000 0.0000000 16.335709
+0.0160 0.0000000 0.0000000 0.0000000 34.580128 78.142570 0.0000000 0.0000000 17.290065

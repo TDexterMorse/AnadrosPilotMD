@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/CMakeFiles/fftwBuild"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/CMakeFiles/fftwBuild.rule"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/CMakeFiles/fftwBuild-complete.rule"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-build.rule"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-configure.rule"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-download.rule"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-install.rule"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-mkdir.rule"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-patch.rule"
+		},
+		{
+			"file" : "/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fftwBuild"
+		],
+		"name" : "fftwBuild"
+	}
+}

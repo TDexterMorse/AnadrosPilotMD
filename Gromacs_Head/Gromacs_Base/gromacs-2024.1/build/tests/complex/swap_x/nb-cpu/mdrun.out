@@ -1,0 +1,56 @@
+                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/swap_x/nb-cpu
+Command line:
+  gmx mdrun -notunepme -nb cpu
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+Changing nstlist from 10 to 40, rlist from 1.014 to 1.121
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+GPU direct communication can not be activated because:
+  Swap-coords is not supported.
+
+Using 48 MPI threads
+Using 1 OpenMP thread per tMPI thread
+
+SWAP: Determining initial numbers of ions per compartment.
+SWAP: Setting pointers for checkpoint writing
+SWAP: Channel 0 flux history for ion type NA+ (charge 1): 0 molecules
+SWAP: Channel 1 flux history for ion type NA+ (charge 1): 0 molecules
+SWAP: Channel 0 flux history for ion type CL- (charge -1): 0 molecules
+SWAP: Channel 1 flux history for ion type CL- (charge -1): 0 molecules
+starting mdrun 'Channel_coco in octane membrane'
+2 steps,      0.0 ps.
+
+Writing final coordinates.
+
+
+Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 164.5%.
+ The balanceable part of the MD step is 9%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 14.8%.
+ Average PME mesh/force load: 0.903
+ Part of the total run time spent waiting due to PP/PME imbalance: 1.0 %
+
+NOTE: 14.8 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      Dynamic load balancing was automatically disabled, but it might be beneficial to manually turn it on (option -dlb yes.)
+      You can also consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+NOTE: 42 % of the run time was spent communicating energies,
+      you might want to increase some nst* mdp options
+
+               Core t (s)   Wall t (s)        (%)
+       Time:       15.565        0.325     4785.5
+                 (ns/day)    (hour/ns)
+Performance:        3.188        7.529
+
+Thanx for Using GROMACS - Have a Nice Day
+

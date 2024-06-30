@@ -1,0 +1,14 @@
+WARNING 1 [file /Users/hess/regressiontests/complex/nacl/grompp.mdp]:
+  The Berendsen thermostat does not generate the correct kinetic energy
+  distribution, and should not be used for new production simulations (in
+  our opinion). We would recommend the V-rescale thermostat.
+
+WARNING 2 [file /Users/hess/regressiontests/complex/nacl/grompp.mdp]:
+  The Berendsen barostat does not generate any strictly correct ensemble,
+  and should not be used for new production simulations (in our opinion).
+  We recommend using the C-rescale barostat instead.
+
+WARNING 3 [file /Users/hess/regressiontests/complex/nacl/grompp.mdp]:
+  For proper integration of the Berendsen thermostat, tau-t (0.1) should be
+  at least 5 times larger than nsttcouple*dt (0.025)
+

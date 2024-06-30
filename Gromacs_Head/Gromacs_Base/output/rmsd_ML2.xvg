@@ -1,0 +1,44 @@
+# This file was created Wed Apr  3 15:01:59 2024
+# Created by:
+#                       :-) GROMACS - gmx rms, 2023.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /Users/dmorse/Desktop/8GROMACSPIPE/Gromacs
+# Command line:
+#   gmx rms -s em.tpr -f md_0_10_center.xtc -n index.ndx -tu ns -o rmsd_ML2.xvg
+# gmx rms is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Protein_ML2 after lsq fit to Protein_ML2"
+   0.0000000    0.2284528
+   0.0100000    0.2275868
+   0.0200000    0.2089713
+   0.0300000    0.2110786
+   0.0400000    0.2000612
+   0.0500000    0.2076381
+   0.0600000    0.2160112
+   0.0700000    0.2066025
+   0.0800000    0.2069274
+   0.0900000    0.2017136
+   0.1000000    0.1971593
+   0.1100000    0.2070657
+   0.1200000    0.2266176
+   0.1300000    0.2094559
+   0.1400000    0.2092554
+   0.1500000    0.2198274
+   0.1600000    0.2088450
+   0.1700000    0.2147027
+   0.1800000    0.2021119
+   0.1900000    0.2098128
+   0.2000000    0.2097235
+   0.2100000    0.2086895
+   0.2200000    0.2039762
+   0.2300000    0.2212219
+   0.2400000    0.2287046
+   0.2500000    0.2314610

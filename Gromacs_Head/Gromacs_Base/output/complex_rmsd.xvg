@@ -1,0 +1,44 @@
+# This file was created Wed Apr  3 13:38:36 2024
+# Created by:
+#                       :-) GROMACS - gmx rms, 2023.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /Users/dmorse/Desktop/8GROMACSPIPE/Gromacs
+# Command line:
+#   gmx rms -s md_0_10.tpr -f md_0_10.xtc -n index.ndx -o complex_rmsd.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Protein_ML2 after lsq fit to Protein_ML2"
+   0.0000000    0.0005000
+   0.0100000    0.0929062
+   0.0200000    0.1117093
+   0.0300000    0.1341386
+   0.0400000    0.1393470
+   0.0500000    0.1390613
+   0.0600000    0.1464024
+   0.0700000    0.1563983
+   0.0800000    0.1512923
+   0.0900000    0.1581894
+   0.1000000    0.1553354
+   0.1100000    0.1552442
+   0.1200000    0.1679394
+   0.1300000    0.1726676
+   0.1400000    0.1573824
+   0.1500000    0.1572174
+   0.1600000    0.1600723
+   0.1700000    0.1621446
+   0.1800000    0.1769797
+   0.1900000    0.1749408
+   0.2000000    0.1716048
+   0.2100000    0.1677508
+   0.2200000    0.1635029
+   0.2300000    0.1655081
+   0.2400000    0.1530989
+   0.2500000    0.1652766

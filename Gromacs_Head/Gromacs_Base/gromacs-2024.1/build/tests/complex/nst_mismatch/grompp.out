@@ -1,0 +1,17 @@
+Generated 330891 of the 330891 non-bonded parameter combinations
+
+Generated 330891 of the 330891 1-4 parameter combinations
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+Analysing residue names:
+There are:   216      Water residues
+
+The largest distance between excluded atoms is 0.165 nm between atom 185 and 186
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 16x16x16, spacing 0.116 0.116 0.116
+
+Estimate for the relative computational load of the PME mesh part: 0.28
+
+This run will generate roughly 0 Mb of data

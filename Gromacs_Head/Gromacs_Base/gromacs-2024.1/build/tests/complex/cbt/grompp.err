@@ -1,0 +1,55 @@
+                      :-) GROMACS - gmx grompp, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/cbt
+Command line:
+  gmx grompp -f /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/cbt/grompp.mdp -c /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/cbt/conf -r /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/cbt/conf -p /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/cbt/topol -maxwarn 10
+
+Ignoring obsolete mdp entry 'optimize-fft'
+Ignoring obsolete mdp entry 'rlistlong'
+Ignoring obsolete mdp entry 'nstcalclr'
+Ignoring obsolete mdp entry 'gb-algorithm'
+Ignoring obsolete mdp entry 'nstgbradii'
+Ignoring obsolete mdp entry 'rgbradii'
+Ignoring obsolete mdp entry 'gb-epsilon-solvent'
+Ignoring obsolete mdp entry 'gb-saltconc'
+Ignoring obsolete mdp entry 'gb-obc-alpha'
+Ignoring obsolete mdp entry 'gb-obc-beta'
+Ignoring obsolete mdp entry 'gb-obc-gamma'
+Ignoring obsolete mdp entry 'gb-dielectric-offset'
+Ignoring obsolete mdp entry 'sa-algorithm'
+Ignoring obsolete mdp entry 'sa-surface-tension'
+Ignoring obsolete mdp entry 'ns_type'
+
+NOTE 1 [file /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/cbt/grompp.mdp]:
+  Replacing vdwtype=Shift by the equivalent combination of vdwtype=Cut-off
+  and vdw_modifier=Force-switch
+
+
+NOTE 2 [file /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/cbt/grompp.mdp]:
+  With Verlet lists the optimal nstlist is >= 10, with GPUs >= 20. Note
+  that with the Verlet scheme, nstlist has no effect on the accuracy of
+  your simulation.
+
+
+WARNING 1 [file /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/cbt/grompp.mdp]:
+  The Berendsen thermostat does not generate the correct kinetic energy
+  distribution, and should not be used for new production simulations (in
+  our opinion). We would recommend the V-rescale thermostat.
+
+
+NOTE 3 [file topol.top, line 10]:
+  The bond in molecule-type PEG between atoms 1 OH and 2 O1 has an
+  estimated oscillational period of 2.9e-01 ps, which is less than 10 times
+  the time step of 4.0e-02 ps.
+  Maybe you forgot to change the constraints mdp option.
+
+Number of degrees of freedom in T-Coupling group PEG is 108.00
+
+There were 3 NOTEs
+
+There was 1 WARNING
+
+Thanx for Using GROMACS - Have a Nice Day
+

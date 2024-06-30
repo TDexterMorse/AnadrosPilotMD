@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" time="1.953" timestamp="2024-04-22T21:33:27.658" name="AllTests">
+  <testsuite name="GmxApiTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0.423" timestamp="2024-04-22T21:33:29.189">
+    <testcase name="BuildApiWorkflowImpl" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/gmxapi/cpp/workflow/tests/workflow.cpp" line="52" status="run" result="completed" time="0.218" timestamp="2024-04-22T21:33:29.189" classname="GmxApiTest" />
+    <testcase name="CreateApiWorkflow" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/gmxapi/cpp/workflow/tests/workflow.cpp" line="74" status="run" result="completed" time="0.204" timestamp="2024-04-22T21:33:29.407" classname="GmxApiTest" />
+  </testsuite>
+</testsuites>

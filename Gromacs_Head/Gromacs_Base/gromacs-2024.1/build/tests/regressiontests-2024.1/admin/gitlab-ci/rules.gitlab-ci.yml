@@ -1,0 +1,77 @@
+# Mix-in definitions to inherit a standardized *rules* parameter.
+# Reference:
+# * https://docs.gitlab.com/ee/ci/yaml/#rules
+# * https://docs.gitlab.com/ee/ci/variables/README.html#syntax-of-environment-variable-expressions
+
+# GitLab CI uses a YAML array for the *rules* job parameter, but neither YAML
+# nor GitLab CI syntax provide a way to merge arrays. However, elements of
+# *rules* are mappings, and we can at least reduce the amount of copy-paste
+# syntax by providing anchors and example arrays.
+# The following YAML objects may be referenced through "anchors" as elements of
+# the *rules* array in mix-in jobs (defined later in the file).
+# The &<name> annotation is a YAML anchor that allows the annotated {"if", "when"} hash
+# to be inserted with a *<name> alias in a `rules` arrays in the current file.
+# Commonly reusable elements have anchors defined for easy copy-paste templating
+# of new rule sets. Rule elements that are unique to a single *rules* mix-in may
+# be defined with the rule set for readability, particularly when the element is
+# the main distinguishing characteristic of the mix-in.
+
+# Exclude from pipelines launched outside the "gromacs" GitLab project namespace.
+.rules-element:if-not-gromacs-then-never: &if-not-gromacs-then-never
+  if: '$CI_PROJECT_NAMESPACE != "gromacs"'
+  when: never
+
+# Exclude if the GROMACS_RELEASE variable is set.
+.rules-element:if-release-then-never: &if-release-then-never
+  if: '$GROMACS_RELEASE'
+  when: never
+
+# Include in pipelines triggered through the web interface.
+.rules-element:if-web-then-on-success: &if-web-then-on-success
+  if: '$CI_PIPELINE_SOURCE == "web"'
+  when: on_success
+
+# Exclude from pipelines triggered by "push" events.
+.rules-element:if-push-then-never: &if-push-then-never
+  if: '$CI_PIPELINE_SOURCE == "push"'
+  when: never
+
+# Include in all "schedule" pipelines (nightly, weekly, etc)
+.rules-element:if-schedule-then-on-success: &if-schedule-then-on-success
+  if: '$CI_PIPELINE_SOURCE == "schedule"'
+  when: on_success
+
+# Include in pipelines triggered in the merge request process.
+.rules-element:if-mr-then-on-success: &if-mr-then-on-success
+  if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+  when: on_success
+
+# When composing a rule set, note that the first matching rule is applied.
+# If you want later rules to be evaluated, you must make sure that the *if*
+# clause of the earlier rules does not match. This may require inverting the
+# logic of a rule element *if* and *when* clause in a new element definition
+# (above) in order to construct new rule sets.
+
+# Jobs that run for merge requests and schedules, but not when GROMACS_RELEASE
+# is set. Excludes non-GROMACS projects.
+# More elaborate rule sets for merge requests should be based on the same sequence.
+.rules:merge-requests:
+  rules:
+    - *if-not-gromacs-then-never
+    - *if-release-then-never
+    - *if-push-then-never
+    - *if-web-then-on-success
+    - *if-schedule-then-on-success
+    - *if-mr-then-on-success
+
+# Jobs for merge requests that are allowed to fail the regressiontests.
+.rules:merge-requests-allow-failure:
+  rules:
+    - *if-not-gromacs-then-never
+    - *if-release-then-never
+    - *if-push-then-never
+    - *if-web-then-on-success
+    - *if-schedule-then-on-success
+    - *if-mr-then-on-success
+  allow_failure: true
+

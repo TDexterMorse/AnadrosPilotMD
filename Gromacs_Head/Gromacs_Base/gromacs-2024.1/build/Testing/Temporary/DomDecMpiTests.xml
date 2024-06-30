@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="0" disabled="0" errors="0" time="0.066" timestamp="2024-04-22T21:33:43.000" name="AllTests">
+  <testsuite name="HaloExchangeTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0.066" timestamp="2024-04-22T21:33:43.000">
+    <testcase name="Coordinates1dHaloWith1Pulse" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/domdec/tests/haloexchange_mpi.cpp" line="518" status="run" result="completed" time="0.022" timestamp="2024-04-22T21:33:43.000" classname="HaloExchangeTest" />
+    <testcase name="Coordinates1dHaloWith2Pulses" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/domdec/tests/haloexchange_mpi.cpp" line="573" status="run" result="completed" time="0.014" timestamp="2024-04-22T21:33:43.023" classname="HaloExchangeTest" />
+    <testcase name="Coordinates2dHaloWith1PulseInEachDim" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/domdec/tests/haloexchange_mpi.cpp" line="629" status="run" result="completed" time="0.013" timestamp="2024-04-22T21:33:43.038" classname="HaloExchangeTest" />
+    <testcase name="Coordinates2dHaloWith2PulsesInDim1" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/domdec/tests/haloexchange_mpi.cpp" line="684" status="run" result="completed" time="0.015" timestamp="2024-04-22T21:33:43.051" classname="HaloExchangeTest" />
+  </testsuite>
+</testsuites>
