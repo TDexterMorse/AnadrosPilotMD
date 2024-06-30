@@ -1,0 +1,25 @@
+# This file was created Mon Apr 22 21:34:00 2024
+# Created by:
+#                     :-) GROMACS - gmxana-test, 2024.1 (-:
+# 
+# Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmxana-test
+# Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+# Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/gromacs/gmxana/tests
+# Command line:
+#   gmxana-test --gtest_output=xml:/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/Testing/Temporary/GmxAnaTest.xml
+# gmxana-test is part of G R O M A C S:
+#
+# GROningen MAchine for Chemical Simulation
+#
+@    title "Minimum Distance"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Distance (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "atoms12-atom3"
+0.000000e+00  5.000000e-01

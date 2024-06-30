@@ -1,0 +1,23 @@
+Generated 10 of the 10 non-bonded parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'C10'
+
+turning all bonds into constraints...
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+turning all bonds into constraints...
+Analysing residue names:
+There are:    50      Other residues
+There are:   389      Water residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 1.049 nm, buffer size 0.049 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.038 nm, buffer size 0.038 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+This run will generate roughly 0 Mb of data

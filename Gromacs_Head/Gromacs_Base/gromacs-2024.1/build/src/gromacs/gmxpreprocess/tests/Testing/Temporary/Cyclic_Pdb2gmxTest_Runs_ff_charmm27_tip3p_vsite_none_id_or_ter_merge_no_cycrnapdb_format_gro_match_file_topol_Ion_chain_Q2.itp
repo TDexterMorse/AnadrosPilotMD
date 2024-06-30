@@ -1,0 +1,45 @@
+;
+;	File '/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/gromacs/gmxpreprocess/tests/Testing/Temporary/Cyclic_Pdb2gmxTest_Runs_ff_charmm27_tip3p_vsite_none_id_or_ter_merge_no_cycrnapdb_format_gro_match_file_topol_Ion_chain_Q2.itp' was generated
+;	By user: ubuntu (1000)
+;	On host: ip-172-31-60-115
+;	At date: Mon Apr 22 21:34:03 2024
+;
+;	This is a include topology file
+;
+;	Created by:
+;	                   :-) GROMACS - pdb2gmx3-test, 2024.1 (-:
+;	
+;	Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/pdb2gmx3-test
+;	Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+;	Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/gromacs/gmxpreprocess/tests
+;	Command line:
+;	  pdb2gmx3-test --gtest_output=xml:/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/Testing/Temporary/Pdb2gmx3Test.xml
+;	Force field was read from the standard GROMACS share directory.
+;
+
+[ moleculetype ]
+; Name            nrexcl
+Ion_chain_Q2        3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue  72 MG  rtp MG   q +2.0
+     1         MG     72     MG     MG      1          2     24.305   ; qtot 2
+; residue  73 MG  rtp MG   q +2.0
+     2         MG     73     MG     MG      2          2     24.305   ; qtot 4
+; residue  74 MG  rtp MG   q +2.0
+     3         MG     74     MG     MG      3          2     24.305   ; qtot 6
+; residue  75 MG  rtp MG   q +2.0
+     4         MG     75     MG     MG      4          2     24.305   ; qtot 8
+; residue  76 MG  rtp MG   q +2.0
+     5         MG     76     MG     MG      5          2     24.305   ; qtot 10
+; residue  77 MG  rtp MG   q +2.0
+     6         MG     77     MG     MG      6          2     24.305   ; qtot 12
+; residue  78 MG  rtp MG   q +2.0
+     7         MG     78     MG     MG      7          2     24.305   ; qtot 14
+
+; Include Position restraint file
+#ifdef POSRES
+#include "posre_Ion_chain_Q2.itp"
+#endif
+

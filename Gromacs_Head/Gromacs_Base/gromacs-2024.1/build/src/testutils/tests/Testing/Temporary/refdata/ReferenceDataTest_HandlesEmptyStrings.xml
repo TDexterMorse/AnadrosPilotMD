@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="referencedata.xsl"?>
+<ReferenceData>
+  <String Name="Empty"></String>
+  <String Name="EmptyBlock"><![CDATA[
+]]></String>
+  <String Name="EmptyLineBlock"><![CDATA[
+
+]]></String>
+</ReferenceData>

@@ -1,0 +1,25 @@
+Generated 6 of the 10 non-bonded parameter combinations
+
+Excluding 2 bonded neighbours molecule type 'SW'
+
+turning all bonds into constraints...
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:   216      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between excluded atoms is 0.164 nm between atom 682 and 683
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 298.15 K
+
+Calculated rlist for 1x1 atom pair-list as 0.840 nm, buffer size 0.040 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 0.804 nm, buffer size 0.004 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Using a fourier grid of 32x32x32, spacing 0.058 0.058 0.058
+
+Estimate for the relative computational load of the PME mesh part: 0.40
+
+This run will generate roughly 0 Mb of data

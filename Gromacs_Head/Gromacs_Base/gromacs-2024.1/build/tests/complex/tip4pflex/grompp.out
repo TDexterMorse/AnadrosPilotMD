@@ -1,0 +1,25 @@
+Generated 6 of the 6 non-bonded parameter combinations
+
+Generated 6 of the 6 1-4 parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:   768      Water residues
+
+The largest distance between excluded atoms is 0.175 nm between atom 2842 and 2843
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 252.517 K
+
+Calculated rlist for 1x1 atom pair-list as 0.902 nm, buffer size 0.002 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 0.900 nm, buffer size 0.000 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 24x28x25, spacing 0.112 0.111 0.117
+
+Estimate for the relative computational load of the PME mesh part: 0.22
+
+This run will generate roughly 0 Mb of data

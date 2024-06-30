@@ -1,0 +1,8 @@
+source leaprc.protein.ff14SB  # Source leaprc file for ff14SB protein force field
+source leaprc.gaff            # Source leaprc file for gaff
+source leaprc.water.tip3p     # Source leaprc file for TIP3P water model
+loadamberprep output.prepi    # Load the prepi file for the ligand
+loadamberparams output.frcmod # Load the additional frcmod file for ligand
+mol = loadpdb complex_clean_h.pdb     # Load cleaned PDB file for protein-ligand complex
+saveamberparm mol complex.prmtop complex.inpcrd  # Save AMBER topology and coordinate files
+quit  

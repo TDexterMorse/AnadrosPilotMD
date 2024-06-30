@@ -1,0 +1,17 @@
+Generated 330891 of the 330891 non-bonded parameter combinations
+
+Generated 330891 of the 330891 1-4 parameter combinations
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+Analysing residue names:
+There are:   216      Water residues
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 212.778 K
+
+Calculated rlist for 1x1 atom pair-list as 0.921 nm, buffer size 0.021 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 0.916 nm, buffer size 0.016 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+This run will generate roughly 0 Mb of data

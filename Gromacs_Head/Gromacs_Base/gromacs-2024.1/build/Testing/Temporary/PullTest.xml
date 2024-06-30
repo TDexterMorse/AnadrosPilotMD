@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="10" failures="0" disabled="0" errors="0" time="0" timestamp="2024-04-22T21:33:59.398" name="AllTests">
+  <testsuite name="PullTest" tests="10" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2024-04-22T21:33:59.398">
+    <testcase name="MaxPullDistanceXyzScrewBox" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="169" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="MaxPullDistanceXyzCubicBox" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="176" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="MaxPullDistanceXyzTricBox" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="183" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="MaxPullDistanceXyzLongBox" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="190" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="MaxPullDistanceXySkewedBox" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="197" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="TransformationCoordSimple" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="210" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="TransformationCoordAdvanced" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="254" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="TransformationCoordTime" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="352" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="TransformationCoordTimeNotAllowed" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="385" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+    <testcase name="TransformationCoordDummyExpression" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/pulling/tests/pull.cpp" line="417" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:59.398" classname="PullTest" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="referencedata.xsl"?>
+<ReferenceData>
+  <Compound Name="Compound">
+    <Int Name="int1">1</Int>
+    <Int Name="int2">2</Int>
+  </Compound>
+  <Int Name="int">1</Int>
+</ReferenceData>

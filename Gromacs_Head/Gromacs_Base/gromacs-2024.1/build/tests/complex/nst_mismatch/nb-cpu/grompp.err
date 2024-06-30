@@ -1,0 +1,22 @@
+                      :-) GROMACS - gmx grompp, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/nst_mismatch/nb-cpu
+Command line:
+  gmx grompp -f /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/nst_mismatch/grompp.mdp -c /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/nst_mismatch/conf -r /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/nst_mismatch/conf -p /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/nst_mismatch/topol -maxwarn 10
+
+Ignoring obsolete mdp entry 'ns_type'
+
+WARNING 1 [file /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/nst_mismatch/grompp.mdp]:
+  The Berendsen barostat does not generate any strictly correct ensemble,
+  and should not be used for new production simulations (in our opinion).
+  We recommend using the C-rescale barostat instead.
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 1293.00
+
+There was 1 WARNING
+
+Thanx for Using GROMACS - Have a Nice Day
+

@@ -1,0 +1,65 @@
+# This file was created Mon Apr 22 21:44:50 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+# 
+# Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+# Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+# Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/swap_z
+# Command line:
+#   gmx mdrun -notunepme
+# gmx mdrun is part of G R O M A C S:
+#
+# GROMACS
+#
+@    title "Molecule counts"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "counts"
+@TYPE xy
+# Split0 group 'Ch0' contains 83 atoms.
+# Split1 group 'Ch1' contains 83 atoms.
+# Solvent group 'SOL' contains 11931 atoms with 3 atoms in each molecule of charge 0.
+# Ion group 'NA+' contains 19 atoms with 1 atom in each molecule of charge 1.
+# Ion group 'CL-' contains 19 atoms with 1 atom in each molecule of charge -1.
+#
+# Initial positions of split groups:
+# Split0 group Z-center 7.291843 nm
+# Split1 group Z-center 2.376072 nm
+#
+# Split0 cylinder radius 0.900000 nm, up 0.750000 nm, down 0.750000 nm
+# Split1 cylinder radius 0.900000 nm, up 0.750000 nm, down 0.750000 nm
+#
+# Coupling constant (number of swap attempt steps to average over): 1  (translates to 0.004000 ps).
+# Threshold is 1.000000
+#
+# Remarks about which atoms passed which channel use global atoms numbers starting at one.
+# Requested charge imbalance is Q(A)-Q(B) = 0 e.
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "A NA+ ions (charge +1)"
+@ s1 legend "A av. mismatch to 19 NA+ ions"
+@ s2 legend "A net NA+ ion influx"
+@ s3 legend "A CL- ions (charge -1)"
+@ s4 legend "A av. mismatch to 19 CL- ions"
+@ s5 legend "A net CL- ion influx"
+@ s6 legend "B NA+ ions (charge +1)"
+@ s7 legend "B av. mismatch to 0 NA+ ions"
+@ s8 legend "B net NA+ ion influx"
+@ s9 legend "B CL- ions (charge -1)"
+@ s10 legend "B av. mismatch to 0 CL- ions"
+@ s11 legend "B net CL- ion influx"
+@ s12 legend "Z-center of mass of split group 0"
+@ s13 legend "Z-center of geometry of split group 1"
+@ s14 legend "A->ch0->B NA+ permeations"
+@ s15 legend "A->ch0->B CL- permeations"
+@ s16 legend "A->ch1->B NA+ permeations"
+@ s17 legend "A->ch1->B CL- permeations"
+@ s18 legend "leakage"
+# Instantaneous ion counts and time-averaged differences to requested numbers
+#  time (ps)        s0        s1        s2        s3        s4        s5        s6        s7        s8        s9       s10       s11       s12       s13       s14       s15       s16       s17       s18
+ 4.00000e-03         9     -10.0         0         9     -10.0         0        10      10.0         0        10      10.0         0   7.29201   2.37547         0         0         0         0         0
+# Solv. molecules in comp.A: 2041   comp.B: 1936
+ 4.00000e-03        19       0.0        10        19       0.0        10         0       0.0       -10         0       0.0       -10   7.29201   2.37547         0         0         0         0         0  # after swap

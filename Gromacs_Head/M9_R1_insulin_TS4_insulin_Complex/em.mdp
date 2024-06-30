@@ -1,0 +1,34 @@
+; LINES STARTING WITH ';' ARE COMMENTS
+title		    = Minimization	; Title of run
+
+; Parameters describing what to do, when to stop and what to save
+define              = -DFLEXIBLE
+integrator	    = steep		; Algorithm (steep = steepest descent minimization)
+emtol		    = 10.0  	; Stop minimization when the maximum force < 10.0 kJ/mol
+emstep          = 0.001      ; Energy step size
+nsteps		    = 500000	  	; Maximum number of (minimization) steps to perform
+gen_seed    = 12345     ; Random seed for reproducibility
+
+; Parameters describing how to find the neighbors of each atom and how to calculate the interactions
+nstlist		    = 1		        ; Frequency to update the neighbor list and long range forces
+cutoff-scheme   = Verlet
+ns_type		    = grid		    ; Method to determine neighbor list (simple, grid)
+rlist		    = 1.2		    ; Cut-off for making neighbor list (short range forces)
+coulombtype	    = PME		    ; Treatment of long range electrostatic interactions
+rcoulomb	    = 1.2		    ; long range electrostatic cut-off
+
+fourierspacing      = 0.12        ; PME grid spacing in nm (increase if encountering PME cutoff errors)
+pme_order           = 4           ; PME interpolation order (adjust for accuracy vs. computational cost)
+
+
+vdwtype         = cutoff
+vdw-modifier    = force-switch
+rvdw-switch     = 1.0
+rvdw		    = 1.2		    ; long range Van der Waals cut-off
+pbc             = xyz 		    ; Periodic Boundary Conditions
+DispCorr        = no
+
+free_energy              = yes
+init_lambda              = 0.0
+delta_lambda             = 0
+sc_alpha                 = 0.5
