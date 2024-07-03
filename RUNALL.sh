@@ -128,7 +128,6 @@ LIGAND=$(basename -s qt "$LIGAND")
 ./format.sh "$PROTEIN" "$LIGAND"
 
 
-
 # Move files matching the pattern to the GROMACS directory
 cp M*Complex.pdb "$GROMACS" && echo "Moved all complex files to $GROMACS directory"
 

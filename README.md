@@ -1,18 +1,28 @@
-## README: 
+
+![AnadrosPilotMD_Logo](https://github.com/TDexterMorse/AnadrosPilotMD/assets/155657572/244f4938-a2e0-4cb7-9826-d7695a9cd449)
 
 #### Introduction to AnadrosPilotMD: P2Rank, Autodock, and Gromacs Wrapper for a Complete Molecular Docking Pipeline
 
 Welcome to AnadrosPilotMD, a comprehensive molecular docking pipeline. This high-throughput, reproducible cheminformatics workflow is designed to facilitate in-depth exploration of protein-ligand interactions. By integrating P2Rank, Autodock, Ambertools, and Gromacs AnadrosPilotMD enables researchers to span the space of many protein-ligand complexes in search of novel or same-similar protein-ligand interactions. 
 
-This pipeline is merely the concatenation of already accepted docking modalities with the goal of further user abstraction and to facilitate reproducibility with full recognition as to the fragility of such a hands off approach; to this end all users are encouraged to read the documentation for each of the primary programs (P2Rank, Autodock, AmberTools, and Gromacs) and to carefully tailor each params file to the system at hand. Breakpoints are included to allow for user input, and an iterative docking approach is applied in order to access optimal simulation start points. For more information please consult these four tutorial workflows/githubs (on which this pipeline is based) as well as the TipsAndTricks file for help with compilation and debugging suggestions for common energy minimization problems.
+AnadrosPilotMD, is designed to streamline the integration of accepted docking modalities to enhance user abstraction and facilitate reproducibility. While this pipeline is a powerful tool, it requires significant initial simulation tuning and investment by the user to ensure the physical reality of the system. It is not intended to run autonomously but rather to assist researchers in running multiple streamlined same-similar experiments quickly and efficiently, thereby expediting the comparison of binding affinities for several ligands in drug discovery efforts.
 
-P2Rank -> https://github.com/rdk/p2rank , https://prankweb.cz/
+Key Features:
 
-AutoDock -> https://github.com/ccsb-scripps/AutoDock-GPU
+-	Efficiency and Reproducibility: Allows users to run parallel and sequential experiments, enhancing the comparison process for binding affinities.
+-	Integrated Tools: Combines well-established programs like P2Rank, AutoDock, AmberTools, and GROMACS, each chosen for their robust performance in specific aspects of molecular docking and simulations.
+-	User Involvement: Breakpoints for user input are included to ensure optimal simulation start points and energies, fostering a more accurate and tailored approach.
+-	Iterative Docking Approach: Enhances the refinement process, allowing users to access optimal conditions iteratively.
 
-AmberTools -> https://ambermd.org/AmberTools.php , http://ffamber.cnsm.csulb.edu/ffamber.php
+We encourage users to familiarize themselves with the documentation for each integrated program (P2Rank, AutoDock, AmberTools, and GROMACS) to understand the pipeline’s strengths and limitations fully. For further guidance, consult these tutorial workflows/githubs on the base programs and the TipsAndTricks file, which provide assistance with compilation and offer debugging suggestions for common energy minimization issues. 
 
-Gromacs -> http://www.mdtutorials.com/gmx/complex/index.html , https://www.gromacs.org/tutorial_webinar.html
+P2Rank -> [github](https://github.com/rdk/p2rank) , [web](https://prankweb.cz/)
+
+AutoDock -> [github](https://github.com/ccsb-scripps/AutoDock-GPU)
+
+AmberTools -> [web](https://ambermd.org/AmberTools.php) , [GAFF2](http://ffamber.cnsm.csulb.edu/ffamber.php)
+
+Gromacs -> [tutorial1](http://www.mdtutorials.com/gmx/complex/index.html) , [tutorial2](https://www.gromacs.org/tutorial_webinar.html) , [web](https://www.gromacs.org/)
 
 Starting with a protein PDB file (in Alphafold Format) and a SMILES representation of a small molecule ligand, the pipeline performs the following tasks:
 
@@ -26,8 +36,7 @@ Starting with a protein PDB file (in Alphafold Format) and a SMILES representati
 ## Tools and References
 
 #### P2Rank
-
-P2Rank is a versatile command line tool designed to predict ligand-binding pockets directly from protein structures. Unlike many other methods, P2Rank achieves high prediction success rates independently, without relying on external software for complex feature computation or pre-existing databases of protein-ligand templates P2Rank's predictive power stems from a machine learning model trained on a diverse dataset of protein-ligand complexes, scoring and clustering points on the protein's surface to identify potential binding sites effectively. P2Rank was chosen for pocket prediction due to its speed and its concision with previous (slower) graph based models. (Krivak et al., 2018)
+P2Rank is a versatile command line tool designed to predict ligand-binding pockets directly from protein structures. Unlike many other methods, P2Rank achieves high prediction success rates independently, without relying on external software for complex feature computation or pre-existing databases of protein-ligand templates P2Rank's predictive power stems from a machine learning model trained on a diverse dataset of protein-ligand complexes, scoring and clustering points on the protein's surface to identify potential binding sites effectively. P2Rank was chosen for pocket prediction due to its speed and its concision with previous (slower) graph based models. (Krivak et al., 2018) ^[1]
 
 #### AutoDock
 AutoDock is an open-source suite of automated docking tools designed to predict how small molecules, such as substrates or drug candidates, bind to a receptor of known 3D structure. For our purposes we leveraged the initial physical docking predictions, and further iterated down (as part of initial Gromacs energy minimization) to find the optimal docking start point.(Morris et al., 2009)
@@ -36,46 +45,27 @@ AutoDock is an open-source suite of automated docking tools designed to predict 
 GROMACS (Groningen Machine for Chemical Simulations) is a powerful software suite specifically designed for conducting molecular dynamics simulations, particularly for protein-ligand interaction studies. It employs advanced algorithms to simulate the Newtonian equations of motion for complex biochemical systems, allowing researchers to explore the dynamic behavior and stability of protein-ligand complexes with high precision. Widely recognized for its efficiency and scalability from desktops to supercomputers, GROMACS facilitates detailed analysis of molecular interactions, essential for drug discovery and molecular biology research. The bulk of this pipeline is a direct integration of the tutorial written by Justin A. Lemkul, Ph.D. with some augmentation for inclusion of AmberTools gaff2 forcefield and a few simple follow on analyses written by myself. This pipeline may be split such that the user can integrate outputs from the `Complex` module directly into this Gromacs Tutorial if they would rather have greater control of the simulation; my purpose with this pipeline is to eventually build out its robustness such that many ligands may be preliminarily tested in a parallel manner (under more general conditions), with more precise user directed follow on analysis performed on promising molecules. For more information on this workflow please consult the source material (http://www.mdtutorials.com/gmx/complex/index.html) as well as the Gromacs Manual on which I relied heavily (https://manual.gromacs.org/current/index.html) 
 
 #### AmberTools
-
 The GAFF2 (General AMBER Force Field 2) is a versatile force field within AMBERTools, designed specifically for small organic molecules. It incorporates parameters for a wide range of chemical functionalities, allowing accurate molecular simulations and calculations. GAFF2 is particularly useful for tasks like molecular docking, where precise modeling of non-standard organic compounds is essential. It's derived and optimized to maintain compatibility with AMBER molecular dynamics simulations, ensuring reliable and consistent results across various applications in computational chemistry and drug discovery. (http://ffamber.cnsm.csulb.edu/ffamber.php)
 
 ## Installation:
 
-# Docker Import
 
-# Mac
+# Mac - M2 Silicon
+
+
+
+
+
+
+
 
 # NVIDIA
 
 ## CUDA Toolkit Installation:
 
-### Download the CUDA toolkit repository pin and installation package:
-```
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
-sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
-wget https://developer.download.nvidia.com/compute/cuda/12.4.1/local_installers/cuda-repo-ubuntu2204-12-4-local_12.4.1-550.54.15-1_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu2204-12-4-local_12.4.1-550.54.15-1_amd64.deb
-```
+For GPU enabled simulations we will need to have CUDA installed on our machines. The exact method of installation is architecture specific so please consult this CUDA driver decisions tree for a device specific installation protocol: https://developer.nvidia.com/cuda-downloads
 
-### Update the package list and install the CUDA toolkit:
-
-```
-sudo apt-get update
-sudo apt-get install nvidia-cuda-toolkit
-
-```
-
-### Add CUDA to the system PATH:
-
-```
-echo 'export PATH=/usr/local/cuda-12.4/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
-
-```
-
-### Now Install Cuda Enabled Gromacs
-
-```
+##
 
 wget ftp://ftp.gromacs.org/gromacs/gromacs-2024.1.tar.gz
 tar xfz gromacs-2024.1.tar.gz

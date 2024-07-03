@@ -1,0 +1,689 @@
+Processing protein.pdb: insulin.pdb with ligand: TS4 and SMILES: CCCC1=CC=CC=C1O
+Moving protein.pdb to directories...
+Moved to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Obabel
+Moved to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank
+Moved to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Complex
+Moving to SMILES directory...
+Moved to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/SMILEY
+Generating .mol file from SMILES...
+[17:37:06] Molecule does not have explicit Hs. Consider calling AddHs()
+MOL file 'TS4.mol' generated successfully.
+Moving generated .mol file to OBABEL directory...
+Moved TS4.mol to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Obabel
+Moving to Obabel directory...
+Moved to 
+Converting ligand and protein to correct format using OBabel...
+==============================
+*** Open Babel Warning  in PerceiveBondOrders
+  Failed to kekulize aromatic bonds in OBMol::PerceiveBondOrders (title is insulin.pdb)
+
+1 molecule converted
+1 molecule converted
+1 molecule converted
+1 molecule converted
+1 molecule converted
+Extracted connections saved to JUSTBONDS.pdb
+Conversion complete.
+Conversion completed.
+Moving output files to AUTODOCK and COMPLEX directories...
+Moved TS4.pdbqt to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/AutoDock
+Moved TS4.pdb to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Complex
+Moving to P2Rank directory...
+Moved to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank
+Predicting binding sites using P2Rank...
+P2Rank 2.4.2-beta.1
+
+predicting pockets for proteins from dataset [insulin.pdb]
+processing [insulin.pdb] (1/1)
+predicting pockets finished in 0 hours 0 minutes 8.843 seconds
+results saved to directory [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin]
+
+Finished successfully in 0 hours 0 minutes 10.507 seconds.
+Directory path: [INFO] Console - results saved to directory [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin]
+Directory path extract: /Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin
+Contents moved to results directory.
+insulin.pdb
+Moving output files to AUTODOCK and COMPLEX directories...
+Moved .csv files to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/AutoDock
+Moving to AUTODOCK directory...
+Moved to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/AutoDock
+v1.1.2-5b1-deb_cv1: Pulling from biocontainers/autodock-vina
+Digest: sha256:2ded05aad180f697190333c5ad451ac13f80f3d7f38eb2682509ac1c1666c720
+Status: Image is up to date for biocontainers/autodock-vina:v1.1.2-5b1-deb_cv1
+docker.io/biocontainers/autodock-vina:v1.1.2-5b1-deb_cv1
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview biocontainers/autodock-vina:v1.1.2-5b1-deb_cv1
+Error response from daemon: Cannot kill container: dock: No such container: dock
+Error response from daemon: No such container: dock
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+de8dce16295414c7a4e4a9da5249042af242219ecf25afc98dcfb7a5c7a917ce
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 10 CPUs
+WARNING: at low exhaustiveness, it may be impossible to utilize all CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+Using random seed: 894441518
+Performing search ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2         -0.0     14.178     15.522
+   3         -0.0     14.366     15.697
+   4         -0.0      8.421      9.533
+   5         -0.0     10.513     12.986
+   6         -0.0      4.580      6.454
+   7         -0.0     12.036     13.139
+   8         -0.0     13.194     14.956
+   9         -0.0      6.479      7.450
+Writing output ... done.
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 10 CPUs
+WARNING: at low exhaustiveness, it may be impossible to utilize all CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+Using random seed: -1631336064
+Performing search ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2         -0.0      7.951      8.964
+   3         -0.0      2.952      4.885
+   4         -0.0      3.499      4.775
+   5         -0.0      5.100      6.152
+   6         -0.0      6.625      8.075
+   7         -0.0      4.666      6.406
+   8         -0.0      9.785     10.531
+   9         -0.0      6.503      8.169
+Writing output ... done.
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 10 CPUs
+WARNING: at low exhaustiveness, it may be impossible to utilize all CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+Using random seed: 137853702
+Performing search ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2         -0.0      6.970      8.081
+   3         -0.0     12.139     13.241
+   4         -0.0     12.627     13.573
+   5         -0.0      2.853      4.104
+   6         -0.0     11.201     12.120
+   7         -0.0      8.892      9.796
+   8         -0.0      5.000      5.718
+   9         -0.0      3.381      3.961
+Writing output ... done.
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 10 CPUs
+WARNING: at low exhaustiveness, it may be impossible to utilize all CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+Using random seed: 1907043616
+Performing search ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2         -0.0     11.530     12.833
+   3         -0.0     13.566     15.711
+   4         -0.0      5.999      7.406
+   5         -0.0      6.836      8.259
+   6         -0.0     12.484     14.035
+   7         -0.0     12.265     13.400
+   8         -0.0     10.636     11.853
+   9         -0.0     14.281     15.266
+Writing output ... done.
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+Detected 10 CPUs
+WARNING: at low exhaustiveness, it may be impossible to utilize all CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+Using random seed: -618733784
+Performing search ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -0.0      0.000      0.000
+   2         -0.0     12.238     14.216
+   3         -0.0      8.175      9.487
+   4         -0.0     11.029     11.939
+   5         -0.0      4.121      4.821
+   6         -0.0      5.686      6.304
+   7         -0.0     11.148     12.179
+   8         -0.0      4.216      5.585
+   9         -0.0      4.434      5.933
+Writing output ... done.
+dock
+dock
+Moving to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Complex directory...
+Moved to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Complex
+Extracted name: M1_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M1_R1_insulin_TS4_insulin_Complex.pdb
+Extracted name: M2_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M2_R1_insulin_TS4_insulin_Complex.pdb
+Extracted name: M3_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M3_R1_insulin_TS4_insulin_Complex.pdb
+Extracted name: M4_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M4_R1_insulin_TS4_insulin_Complex.pdb
+Extracted name: M5_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M5_R1_insulin_TS4_insulin_Complex.pdb
+Extracted name: M6_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M6_R1_insulin_TS4_insulin_Complex.pdb
+Extracted name: M7_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M7_R1_insulin_TS4_insulin_Complex.pdb
+Extracted name: M8_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M8_R1_insulin_TS4_insulin_Complex.pdb
+Extracted name: M9_R1_insulin_TS4
+Updated PDB file 'ligand_clean.csv' created successfully.
+Conversion complete.
+Complex created: complex.pdb
+All complexes created successfully.
+Renamed complex.pdb to M9_R1_insulin_TS4_insulin_Complex.pdb
+Moved all complex files to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head directory
+Moving to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head directory...
+Moved to /Users/dmorse/desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head
+Ligand TS4 extracted and saved as TS4.pdb
+Protein file M9_R1_insulin_TS4_insulin_Complex.pdb copied without lines containing TS4 and saved as TS4_Clean.pdb
+CONECT lines updated in TS4.pdb
+Protonate the Ligand Molecule
+1 molecule converted
+Found 22 atoms in the molecule, with 22 bonds.
+Formatted .mol2 file outputted as:  TS4.mol2
+
+Welcome to antechamber 22.0: molecular input file processor.
+
+Info: The atom type is set to gaff; the options available to the -at flag are
+      gaff, gaff2, amber, bcc, and sybyl.
+
+Info: Total number of electrons: 74; net charge: 0
+
+Running: /Users/dmorse/miniconda3/bin/sqm -O -i sqm.in -o sqm.out
+
+1 molecule converted
+
+==================================================
+Summary of pdb4amber for: complex_h.pdb
+===================================================
+
+----------Chains
+The following (original) chains have been found:
+A
+
+---------- Alternate Locations (Original Residues!))
+
+The following residues had alternate locations:
+None
+-----------Non-standard-resnames
+TS4
+
+---------- Missing heavy atom(s)
+
+None
+rm: ions.mdp: No such file or directory
+rm: nvt.mdp: No such file or directory
+rm: npt.mdp: No such file or directory
+rm: em.mdp: No such file or directory
+rm: md.in: No such file or directory
+rm: md.mdp: No such file or directory
+rm: ie.mdp: No such file or directory
+Line number of the next empty line after the marker is: 62
+Protein Restraint inserted successfully.
+LIGAND RESTRAINT ADDED
+WATER FORCE ADDED
+                     :-) GROMACS - gmx editconf, 2023.4 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M9_R1_insulin_TS4_insulin_Complex
+Command line:
+  gmx editconf -f gromacs.gro -o newbox.gro -bt cubic -d 2.0 -c
+
+
+GROMACS reminds you: "I cannot think of a single one, not even intelligence." (Enrico Fermi, when asked what characteristics physics Nobel laureates had in common.)
+
+Note that major changes are planned in future for editconf, to improve usability and utility.
+Read 7458 atoms
+Volume: 374.708 nm^3, corresponds to roughly 168600 electrons
+No velocities found
+    system size :  5.807  6.371  8.147 (nm)
+    diameter    :  8.518               (nm)
+    center      :  0.093 -0.185 -0.659 (nm)
+    box vectors :  6.307  6.871  8.647 (nm)
+    box angles  :  90.00  90.00  90.00 (degrees)
+    box volume  : 374.71               (nm^3)
+    shift       :  6.166  6.444  6.918 (nm)
+new center      :  6.259  6.259  6.259 (nm)
+new box vectors : 12.518 12.518 12.518 (nm)
+new box angles  :  90.00  90.00  90.00 (degrees)
+new box volume  :1961.50               (nm^3)
+                     :-) GROMACS - gmx solvate, 2023.4 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M9_R1_insulin_TS4_insulin_Complex
+Command line:
+  gmx solvate -cp newbox.gro -cs spc216.gro -p gromacs.top -o solv.gro -maxsol 10000 -radius 0.2
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx solvate uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 7x7x7 boxes
+Solvent box contains 210909 atoms in 70303 residues
+Removed 19233 solvent atoms due to solvent-solvent overlap
+Removed 7197 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms): 10000 residues
+Generated solvent containing 30000 atoms in 10000 residues
+Writing generated configuration to solv.gro
+
+Output configuration contains 37458 atoms in 10473 residues
+Volume                 :      1961.5 (nm^3)
+Density                :     201.077 (g/l)
+Number of solvent molecules:  10000   
+
+Processing topology
+
+Back Off! I just backed up gromacs.top to ./#gromacs.top.1#
+
+GROMACS reminds you: "I cannot think of a single one, not even intelligence." (Enrico Fermi, when asked what characteristics physics Nobel laureates had in common.)
+
+Adding line for 10000 solvent molecules with resname (SOL) to topology file (gromacs.top)
+############## Neutralize Charge ######################
+                      :-) GROMACS - gmx grompp, 2023.4 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M9_R1_insulin_TS4_insulin_Complex
+Command line:
+  gmx grompp -f ions.mdp -c solv.gro -p gromacs.top -o ions.tpr -maxwarn 5
+
+Ignoring obsolete mdp entry 'title'
+Ignoring obsolete mdp entry 'ns_type'
+
+NOTE 1 [file ions.mdp]:
+  With Verlet lists the optimal nstlist is >= 10, with GPUs >= 20. Note
+  that with the Verlet scheme, nstlist has no effect on the accuracy of
+  your simulation.
+
+
+WARNING 1 [file gromacs.top, line 64]:
+  Atomtype NA was defined previously (e.g. in the forcefield files), and
+  has now been defined again. This could happen e.g. if you would use a
+  self-contained molecule .itp file that duplicates or replaces the
+  contents of the standard force-field files. You should check the contents
+  of your files and remove such repetition. If you know you should override
+  the previous definition, then you could choose to suppress this warning
+  with -maxwarn.
+
+Generating 1-4 interactions: fudge = 0.5
+
+NOTE 2 [file gromacs.top, line 82513]:
+  System has non-zero total charge: -8.001001
+  Total charge should normally be an integer. See
+  https://manual.gromacs.org/current/user-guide/floating-point.html
+  for discussion on how close it should be to an integer.
+
+
+
+Number of degrees of freedom in T-Coupling group rest is 82371.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 3 [file ions.mdp]:
+  You are using a plain Coulomb cut-off, which might produce artifacts.
+  You might want to consider using PME electrostatics.
+
+
+
+There were 3 NOTEs
+
+There was 1 WARNING
+
+GROMACS reminds you: "I cannot think of a single one, not even intelligence." (Enrico Fermi, when asked what characteristics physics Nobel laureates had in common.)
+
+Setting the LD random seed to -689308225
+
+Generated 1326 of the 1326 non-bonded parameter combinations
+
+Generated 1326 of the 1326 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'system1'
+
+Excluding 3 bonded neighbours molecule type 'TS4'
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+Analysing residue names:
+There are:   472    Protein residues
+There are:     1      Other residues
+There are: 10000      Water residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+This run will generate roughly 3 Mb of data
+                      :-) GROMACS - gmx genion, 2023.4 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M9_R1_insulin_TS4_insulin_Complex
+Command line:
+  gmx genion -s ions.tpr -o solv_ions.gro -p gromacs.top -pname NA -nname CL -neutral
+
+Reading file ions.tpr, VERSION 2023.4 (single precision)
+Reading file ions.tpr, VERSION 2023.4 (single precision)
+Group     0 (         System) has 37458 elements
+Group     1 (        Protein) has  7436 elements
+Group     2 (      Protein-H) has  3781 elements
+Group     3 (        C-alpha) has   472 elements
+Group     4 (       Backbone) has  1416 elements
+Group     5 (      MainChain) has  1889 elements
+Group     6 (   MainChain+Cb) has  2332 elements
+Group     7 (    MainChain+H) has  2341 elements
+Group     8 (      SideChain) has  5095 elements
+Group     9 (    SideChain-H) has  1892 elements
+Group    10 (    Prot-Masses) has  7436 elements
+Group    11 (    non-Protein) has 30022 elements
+Group    12 (          Other) has    22 elements
+Group    13 (            TS4) has    22 elements
+Group    14 (          Water) has 30000 elements
+Group    15 (            SOL) has 30000 elements
+Group    16 (      non-Water) has  7458 elements
+Select a group: Number of (3-atomic) solvent molecules: 10000
+
+Back Off! I just backed up gromacs.top to ./#gromacs.top.2#
+Using random seed -39846993.
+Replacing solvent molecule 4318 (atom 20412) with NA
+Replacing solvent molecule 4466 (atom 20856) with NA
+Replacing solvent molecule 3988 (atom 19422) with NA
+Replacing solvent molecule 8554 (atom 33120) with NA
+Replacing solvent molecule 7159 (atom 28935) with NA
+Replacing solvent molecule 7322 (atom 29424) with NA
+Replacing solvent molecule 3260 (atom 17238) with NA
+Replacing solvent molecule 243 (atom 8187) with NA
+
+
+GROMACS reminds you: "I cannot think of a single one, not even intelligence." (Enrico Fermi, when asked what characteristics physics Nobel laureates had in common.)
+
+Will try to add 8 NA ions and 0 CL ions.
+Select a continuous group of solvent molecules
+Selected 15: 'SOL'
+
+Processing topology
+Replacing 8 solute molecules in topology file (gromacs.top)  by 8 NA and 0 CL ions.
+                      :-) GROMACS - gmx grompp, 2023.4 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M9_R1_insulin_TS4_insulin_Complex
+Command line:
+  gmx grompp -f em.mdp -c solv_ions.gro -p gromacs.top -o em.tpr -maxwarn 50
+
+Ignoring obsolete mdp entry 'title'
+Ignoring obsolete mdp entry 'ns_type'
+
+WARNING 1 [file em.mdp, line 35]:
+  You are using soft-core interactions while the Van der Waals interactions
+  are not decoupled (note that the sc-coul option is only active when using
+  lambda states). Although this will not lead to errors, you will need much
+  more sampling than without soft-core interactions. Consider using
+  sc-alpha=0.
+
+
+NOTE 1 [file em.mdp]:
+  With Verlet lists the optimal nstlist is >= 10, with GPUs >= 20. Note
+  that with the Verlet scheme, nstlist has no effect on the accuracy of
+  your simulation.
+
+
+NOTE 2 [file em.mdp]:
+  With PME there is a minor soft core effect present at the cut-off,
+  proportional to (LJsigma/rcoulomb)^6. This could have a minor effect on
+  energy conservation, but usually other effects dominate. With a common
+  sigma value of 0.34 nm the fraction of the particle-particle potential at
+  the cut-off at lambda=0.5 is around 2.2e-05, while ewald-rtol is 1.0e-05.
+
+
+WARNING 2 [file gromacs.top, line 64]:
+  Atomtype NA was defined previously (e.g. in the forcefield files), and
+  has now been defined again. This could happen e.g. if you would use a
+  self-contained molecule .itp file that duplicates or replaces the
+  contents of the standard force-field files. You should check the contents
+  of your files and remove such repetition. If you know you should override
+  the previous definition, then you could choose to suppress this warning
+  with -maxwarn.
+
+Generating 1-4 interactions: fudge = 0.5
+
+NOTE 3 [file gromacs.top, line 82514]:
+  System has non-zero total charge: -0.001001
+  Total charge should normally be an integer. See
+  https://manual.gromacs.org/current/user-guide/floating-point.html
+  for discussion on how close it should be to an integer.
+
+
+
+
+WARNING 3 [file gromacs.top, line 82514]:
+  You are using Ewald electrostatics in a system with net charge. This can
+  lead to severe artifacts, such as ions moving into regions with low
+  dielectric, due to the uniform background charge. We suggest to
+  neutralize your system with counter ions, possibly in combination with a
+  physiological salt concentration.
+
+Setting the LD random seed to 931135295
+
+Generated 1326 of the 1326 non-bonded parameter combinations
+
+Generated 1326 of the 1326 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'system1'
+
+Excluding 3 bonded neighbours molecule type 'TS4'
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+Excluding 1 bonded neighbours molecule type 'NA'
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+J. S. Hub, B. L. de Groot, H. Grubmueller, G. Groenhof
+Quantifying Artifacts in Ewald Simulations of Inhomogeneous Systems with a Net
+Charge
+J. Chem. Theory Comput. 10 (2014) pp. 381-393
+-------- -------- --- Thank You --- -------- --------
+
+Number of degrees of freedom in T-Coupling group rest is 112323.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+There were 3 NOTEs
+
+There were 3 WARNINGs
+
+GROMACS reminds you: "I cannot think of a single one, not even intelligence." (Enrico Fermi, when asked what characteristics physics Nobel laureates had in common.)
+
+Analysing residue names:
+There are:   472    Protein residues
+There are:     1      Other residues
+There are:  9992      Water residues
+There are:     8        Ion residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between non-perturbed excluded atoms is 0.742 nm between atom 7444 and 7454
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 108x108x108, spacing 0.116 0.116 0.116
+
+Estimate for the relative computational load of the PME mesh part: 0.57
+
+This run will generate roughly 5 Mb of data
+                      :-) GROMACS - gmx mdrun, 2023.4 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M9_R1_insulin_TS4_insulin_Complex
+Command line:
+  gmx mdrun -deffnm em
+
+Reading file em.tpr, VERSION 2023.4 (single precision)
+Using 10 MPI threads
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =       500000

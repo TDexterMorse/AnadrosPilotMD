@@ -10,27 +10,31 @@ processing [insulin.pdb] (1/1)
 [INFO] Console - processing [insulin.pdb] (1/1)
 [INFO] Protein - loading protein [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/insulin.pdb]
 [INFO] PdbUtils - loading file [insulin.pdb]
-[INFO] Struct - all groups in chain A: 349
-[INFO] Struct - all groups in chain A: 349
-[INFO] Struct - 349 groups in chain A
-[INFO] Protein - structure atoms: 2725
-[INFO] Protein - protein   atoms: 2666
+[INFO] Struct - all groups in chain A: 472
+[INFO] Struct - all groups in chain A: 472
+[INFO] Struct - 472 groups in chain A
+[INFO] Protein - structure atoms: 3781
+[INFO] Protein - protein   atoms: 3688
 [INFO] Protein - ignoring ligands
 [INFO] FeatureSetup - enabledFeatures: [chem, volsite, protrusion, bfactor, atom_table]
-[INFO] Protein - SAS points: 10263
-[INFO] Protein - exposed protein atoms: 2289 of 2666
+[INFO] Protein - SAS points: 7563
+[INFO] Protein - exposed protein atoms: 2435 of 3688
 [INFO] InstancePredictor - Creating WekaInstancePredictor
-[INFO] SLinkClusterer - clustering [6] elements
-[INFO] SLinkClusterer - clusters: [id:2( 1 ), id:3( 1 ), id:5( 4 )]
-[INFO] SLinkClusterer - clusters together: 6 / 6
+[INFO] SLinkClusterer - clustering [55] elements
+[INFO] SLinkClusterer - clusters: [id:3( 8 ), id:5( 1 ), id:7( 2 ), id:23( 10 ), id:37( 2 ), id:41( 10 ), id:42( 1 ), id:47( 3 ), id:48( 16 ), id:50( 1 ), id:51( 1 )]
+[INFO] SLinkClusterer - clusters together: 55 / 55
 [INFO] PocketPredictor - PREDICTING POCKETS.... ====================================
-[INFO] PocketPredictor - SAS POINTS: 10263
-[INFO] PocketPredictor - LIGANDABLE POINTS: 6
-[INFO] PocketPredictor - CLUSTERS: 3
-[INFO] PocketPredictor - FILTERED CLUSTERS: 1
-[INFO] PocketPredictor - pocket 1 -  surf_atoms:  10   points:   4   score:    0.9
+[INFO] PocketPredictor - SAS POINTS: 7563
+[INFO] PocketPredictor - LIGANDABLE POINTS: 55
+[INFO] PocketPredictor - CLUSTERS: 11
+[INFO] PocketPredictor - FILTERED CLUSTERS: 5
+[INFO] PocketPredictor - pocket 1 -  surf_atoms:  27   points:  16   score:    6.3
+[INFO] PocketPredictor - pocket 2 -  surf_atoms:  16   points:  10   score:    5.5
+[INFO] PocketPredictor - pocket 3 -  surf_atoms:  41   points:  10   score:    4.5
+[INFO] PocketPredictor - pocket 4 -  surf_atoms:  23   points:   8   score:    3.0
+[INFO] PocketPredictor - pocket 5 -  surf_atoms:  21   points:   3   score:    1.9
 [INFO] OldPymolRenderer - copying [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/insulin.pdb] to [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin/visualizations/data/insulin.pdb]
-[INFO] Console - predicting pockets finished in 0 hours 0 minutes 7.170 seconds
+[INFO] Console - predicting pockets finished in 0 hours 0 minutes 8.843 seconds
 [INFO] Console - results saved to directory [/Users/dmorse/Desktop/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin]
 [INFO] Console - 
-[INFO] Console - Finished successfully in 0 hours 0 minutes 8.812 seconds.
+[INFO] Console - Finished successfully in 0 hours 0 minutes 10.507 seconds.
