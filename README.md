@@ -1,5 +1,5 @@
 
-![AnadrosPilotMD_Logo](https://github.com/TDexterMorse/AnadrosPilotMD/assets/155657572/244f4938-a2e0-4cb7-9826-d7695a9cd449)
+<img width="562" alt="AnadrosPilotMD_Logo2" src="https://github.com/TDexterMorse/AnadrosPilotMD/assets/155657572/01ce8097-6b05-4730-84de-f742469d3949">
 
 #### Introduction to AnadrosPilotMD: P2Rank, Autodock, and Gromacs Wrapper for a Complete Molecular Docking Pipeline
 
@@ -36,7 +36,7 @@ Starting with a protein PDB file (in Alphafold Format) and a SMILES representati
 ## Tools and References
 
 #### P2Rank
-P2Rank is a versatile command line tool designed to predict ligand-binding pockets directly from protein structures. Unlike many other methods, P2Rank achieves high prediction success rates independently, without relying on external software for complex feature computation or pre-existing databases of protein-ligand templates P2Rank's predictive power stems from a machine learning model trained on a diverse dataset of protein-ligand complexes, scoring and clustering points on the protein's surface to identify potential binding sites effectively. P2Rank was chosen for pocket prediction due to its speed and its concision with previous (slower) graph based models. (Krivak et al., 2018) ^[1]
+P2Rank is a versatile command line tool designed to predict ligand-binding pockets directly from protein structures. Unlike many other methods, P2Rank achieves high prediction success rates independently, without relying on external software for complex feature computation or pre-existing databases of protein-ligand templates P2Rank's predictive power stems from a machine learning model trained on a diverse dataset of protein-ligand complexes, scoring and clustering points on the protein's surface to identify potential binding sites effectively. P2Rank was chosen for pocket prediction due to its speed and its concision with previous (slower) graph based models. (Krivak et al., 2018)
 
 #### AutoDock
 AutoDock is an open-source suite of automated docking tools designed to predict how small molecules, such as substrates or drug candidates, bind to a receptor of known 3D structure. For our purposes we leveraged the initial physical docking predictions, and further iterated down (as part of initial Gromacs energy minimization) to find the optimal docking start point.(Morris et al., 2009)
@@ -63,10 +63,11 @@ The GAFF2 (General AMBER Force Field 2) is a versatile force field within AMBERT
 
 ## CUDA Toolkit Installation:
 
-For GPU enabled simulations we will need to have CUDA installed on our machines. The exact method of installation is architecture specific so please consult this CUDA driver decisions tree for a device specific installation protocol: https://developer.nvidia.com/cuda-downloads
+For GPU enabled simulations we will need to have CUDA installed on our machines. The exact method of installation is architecture specific so please consult this CUDA driver decisions tree for a device specific installation protocol: [CUDA Driver](https://developer.nvidia.com/cuda-downloads)
 
-##
+## Gromacs Install
 
+```
 wget ftp://ftp.gromacs.org/gromacs/gromacs-2024.1.tar.gz
 tar xfz gromacs-2024.1.tar.gz
 cd gromacs-2024.1
@@ -86,7 +87,6 @@ sudo make install
 ### And Source Environment
 
 ```
-
 source /usr/local/gromacs/bin/GMXRC
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
@@ -95,7 +95,6 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 ### Verify CUDA and GROMACS installations:
 
 ```
-
 nvcc --version  # Check CUDA version
 gmx --version   # Check GROMACS version and CUDA support
 
@@ -109,7 +108,12 @@ gmx --version   # Check GROMACS version and CUDA support
 ## Pipeline Overview
 This pipeline starts with a protein structure file and a small molecule ligand's SMILES string and progresses through various steps to prepare the system for molecular dynamics (MD) simulations with GROMACS.
 
+
 #### WorkFLow
+
+
+
+
 
 The easiest implementation is to place your protein file in the $BASE directory, then run the command `./RUNALL.sh <alphafold protein .pdb> <unique ligand name> <"Smiles Representation of Ligand">`
 , then navigate to the `Results/<protein-ligand name>` directory, run command `cp $BASE/PostProc/* $BASE/Results/$Reult` and view statistics in the `combined.pdf` file and visualize the separated step images using Chimera or VMD.
@@ -122,66 +126,10 @@ The easiest implementation is to place your protein file in the $BASE directory,
 6. **Analysis**: Extract and analyze key metrics such as hydrogen bonding events, system stability, and interaction energies.
 
 
-#### Modules
-
-Workflow is controlled by the `RUNALL.sh` script, all sub workflows are outlined there or in the respective module main scripts (shown below).
+<img width="1093" alt="AnadrosPilotMD_Workflow" src="https://github.com/TDexterMorse/AnadrosPilotMD/assets/155657572/cf9ec744-1756-4ff9-8c51-708fa034b8c4">
 
 
-#### **Module 1: Input and Smile**
 
-Within the `RUNRABBITRUN.sh` init file we may place multiple main calls (formatted):
-**INPUT**
-`./RUNALL.sh <alphafold protein .pdb> <unique ligand name> <"Smiles Representation of Ligand">`
-
-Generate Initial Ligand Structure in .mol format
-**Step:** Convert SMILES to .mol  
-**Main Script:** `./gen_mol2.sh <ligand name> <“smiles”>`  
-**Output:** `<ligand.mol>`
-
-#### **Module 2: Tower of Babel**
-
-Format Conversion Using Open Babel
-**Step:** Convert to Required Formats  
-**Main Script:**`./obabel.sh <protein.pdb> <ligand.mol>`  
-**Output:** `<protein.pdbqt> <ligand.pdbqt>`  
-
-**Additional Conversion:**  
-**Main Script:** `obabel -imol <ligand.mol> -opdb -O ML233.pdb`  
-**Output:** `<ligand.pdb>`
-
-#### **Module 3: Get Pranked**
-
-Binding Site Detection and Ordering
-**Step:** Use P2Rank for Binding Site Prediction  
-**Main Script:** `./predict_prank.sh <protein.pdb>`  
-**Output:** `<rank order binding sites .csv>`
-
-#### **Module 4: Physical Docking**
-
-Docking with AutoDock Vina
-**Step:** Docking Simulation  
-**Main Script:** `./run_autodock_vina.sh <P2Rank_prediction.csv> <protein.pdbqt> <ligand.pdbqt>`  
-**Output:** `[[<Ligand Positions on Protein>]]`
-
-#### **Module 5: Re-Complex (Potential Break for integration with Gromacs Tutorial)**
-
-Preparing Protein-Ligand Complex
-**Step:** Complex Formation and Cleaning  
-**Main Script:** `./format.sh <protein.pdb> <ligand.pdb>`
-
-#### **Module 6: MD Simulation with Gromacs**
-
-GROMACS Molecular Dynamics Simulation Script
-**Step:** Energy Minimization and Initial Start Configuration selection follow by NPT/NVT and MD simulation  
-**Main Script:** `./complete13.sh <protein.pdb> <"ligand name">`
-**Output:** `A named folder with all Gromacs Simulation outputs`
-
-**note** not yet part of workflow, simply pull the PostProc directory into whatever Gromacs output directory you are currently analyzing `cp $BASE/PostProc/* $BASE/Results/$Reult` **note**
-
-#### **Module 7: PostProc, Post Processing and Analysis**
-**Step:** RMSD Calculation, Centroid Distance Calculation, Radius of Gyration Calculation, Hydrogen Bond Analysis, Interaction Energy Calculation, and Trajectory Conversion for Visualization
-**Main Script:** `./PostProc.sh <ligand name>`
-**Output:** `<combined.pdf>`
 
 References: 
 
