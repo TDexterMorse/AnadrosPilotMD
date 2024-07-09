@@ -1,1 +1,0 @@
-cmd='<SOURCE_DIR>/configure;--prefix=<INSTALL_DIR>;--libdir=<INSTALL_DIR>/lib;--disable-fortran;--disable-shared;--enable-static;--with-pic;--enable-sse2;--enable-avx;--enable-avx2;--enable-float'

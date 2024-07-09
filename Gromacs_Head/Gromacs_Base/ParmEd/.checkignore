@@ -1,0 +1,5 @@
+GmxTests/
+parmed/utils/fortranformat
+parmed/unit
+test/
+parmed/formats/pdbx/

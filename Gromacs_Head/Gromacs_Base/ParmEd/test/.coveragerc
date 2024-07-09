@@ -1,0 +1,27 @@
+[run]
+source = parmed
+omit =
+    */parmed/utils/fortranformat/*
+    */parmed/formats/pdbx/*
+    */parmed/vec3.py
+    */parmed/utils/netcdf.py
+    */parmed/tinker/*
+    */parmed/rosetta/*
+    */parmed/tools/gui/*
+    */parmed/tools/coarsegrain.py
+    */parmed/unit/*
+    */parmed/_version.py
+[paths]
+source =
+    /home/*/site-packages/ParmEd-*.egg/
+
+[report]
+exclude_lines =
+    # Re-enable the standard pragma
+    pragma: no cover
+
+    # Don't complain about defensive assertion code
+    raise AssertionError
+    raise RuntimeError
+    raise NotImplementedError
+    return NotImplemented

@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="referencedata.xsl"?>
-<ReferenceData>
-  <Compound Name="1">
-    <Int Name="int">2</Int>
-  </Compound>
-  <String Name="2">Test</String>
-</ReferenceData>

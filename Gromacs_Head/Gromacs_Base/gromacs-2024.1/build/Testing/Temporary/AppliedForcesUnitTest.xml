@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="3" failures="0" disabled="0" errors="0" time="0" timestamp="2024-04-22T21:33:38.120" name="AllTests">
-  <testsuite name="ElectricFieldTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2024-04-22T21:33:38.121">
-    <testcase name="Static" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/applied_forces/tests/electricfield.cpp" line="129" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:38.121" classname="ElectricFieldTest" />
-    <testcase name="Oscillating" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/applied_forces/tests/electricfield.cpp" line="134" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:38.121" classname="ElectricFieldTest" />
-    <testcase name="Pulsed" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/gromacs/applied_forces/tests/electricfield.cpp" line="139" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:38.121" classname="ElectricFieldTest" />
-  </testsuite>
-</testsuites>

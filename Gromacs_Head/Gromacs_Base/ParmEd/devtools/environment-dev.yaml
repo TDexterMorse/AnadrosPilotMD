@@ -1,0 +1,17 @@
+name: parmed-dev
+channels:
+  - conda-forge
+  - conda-forge/label/openmm_rc
+dependencies:
+  - pandas
+  - openmm >=7.6.0
+  - netCDF4
+  - rdkit >=2020.09.4
+  - nglview
+  - networkx
+  - lxml
+  - gromacs
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - pytest-sugar

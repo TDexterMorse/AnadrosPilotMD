@@ -1,5 +1,0 @@
-WARNING 1 [file grompp.mdp]:
-  The Berendsen thermostat does not generate the correct kinetic energy
-  distribution, and should not be used for new production simulations (in
-  our opinion). We would recommend the V-rescale thermostat.
-

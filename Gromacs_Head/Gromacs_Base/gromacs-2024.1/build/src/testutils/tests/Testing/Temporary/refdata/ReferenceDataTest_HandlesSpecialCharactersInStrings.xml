@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="referencedata.xsl"?>
-<ReferenceData>
-  <String Name="string">"&lt;'&gt;
-&amp;\/;</String>
-  <String Name="stringblock"><![CDATA[
-"<'>
-&\/;]]></String>
-</ReferenceData>

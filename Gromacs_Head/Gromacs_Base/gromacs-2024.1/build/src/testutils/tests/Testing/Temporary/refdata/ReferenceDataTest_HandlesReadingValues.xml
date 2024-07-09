@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="referencedata.xsl"?>
-<ReferenceData>
-  <UChar Name="char">65</UChar>
-  <Int Name="int">1</Int>
-  <String Name="string">Test</String>
-</ReferenceData>

@@ -1,3 +1,0 @@
-/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/_deps/muparser-subbuild/CMakeFiles/muparser-populate.dir
-/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/_deps/muparser-subbuild/CMakeFiles/edit_cache.dir
-/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/_deps/muparser-subbuild/CMakeFiles/rebuild_cache.dir

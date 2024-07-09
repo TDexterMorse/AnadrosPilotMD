@@ -1,4 +1,0 @@
-Tcoupl  = Berendsen
-tc-grps = System
-tau-t   = 0.1
-ref_t   = 298
