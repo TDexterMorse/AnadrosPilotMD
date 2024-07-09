@@ -1,0 +1,22 @@
+# This file was created Mon Apr 22 21:46:52 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+# 
+# Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+# Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+# Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/freeenergy/vdwalone/nb-cpu
+# Command line:
+#   gmx mdrun -ntmpi 8 -notunepme -nb cpu
+# gmx mdrun is part of G R O M A C S:
+#
+# GROMACS
+#
+@    title "dH/d\xl\f{}"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 300 (K) \xl\f{} = 0.2500"
+0.0000 61.129944
+0.0200 68.286957
+0.0400 69.802086
+0.0600 67.798492

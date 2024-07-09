@@ -1,0 +1,35 @@
+                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/dd121/nb-cpu
+Command line:
+  gmx mdrun -ntmpi 12 -notunepme -nb cpu
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+Can not increase nstlist because verlet-buffer-tolerance is not set or used
+Update groups can not be used for this system because an incompatible virtual site type is used
+
+Using 12 MPI threads
+Using 4 OpenMP threads per tMPI thread
+
+starting mdrun 'Protein'
+20 steps,      0.1 ps.
+
+Writing final coordinates.
+
+
+Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 10.7%.
+ The balanceable part of the MD step is 18%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 1.9%.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        1.358        0.028     4787.6
+                 (ns/day)    (hour/ns)
+Performance:      319.826        0.075
+
+Thanx for Using GROMACS - Have a Nice Day
+

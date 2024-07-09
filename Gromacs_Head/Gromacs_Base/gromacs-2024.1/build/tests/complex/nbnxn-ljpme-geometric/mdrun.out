@@ -1,0 +1,42 @@
+                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/nbnxn-ljpme-geometric
+Command line:
+  gmx mdrun -notunepme
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 10 to 100, rlist from 1 to 1.029
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+On host ip-172-31-60-115 4 GPUs selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 4 MPI threads
+Using 8 OpenMP threads per tMPI thread
+
+starting mdrun 'water+hexane'
+20 steps,      0.0 ps.
+
+Writing final coordinates.
+
+NOTE: 2 % of the run time was spent in domain decomposition,
+      28 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        1.601        0.050     3195.0
+                 (ns/day)    (hour/ns)
+Performance:       72.435        0.331
+
+Thanx for Using GROMACS - Have a Nice Day
+

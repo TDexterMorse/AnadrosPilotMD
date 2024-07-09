@@ -1,0 +1,6 @@
+This system tests non-matching step interval parameters
+
+This system uses different, preferably prime, numbers for all coupling,
+calculation and output mdp parameters. Normal runs and tests usually
+use nice divisible numbers, so we need to test all special cases,
+which is also where bugs are more likely to appear.

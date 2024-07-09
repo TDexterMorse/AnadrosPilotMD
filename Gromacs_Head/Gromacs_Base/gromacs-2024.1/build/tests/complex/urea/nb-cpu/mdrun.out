@@ -1,0 +1,41 @@
+                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/urea/nb-cpu
+Command line:
+  gmx mdrun -notunepme -nb cpu
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 12 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Can not increase nstlist because an NVE ensemble is used
+Using 12 MPI threads
+Using 4 OpenMP threads per tMPI thread
+
+starting mdrun 'Urea'
+10 steps,      0.0 ps.
+
+Writing final coordinates.
+
+
+Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 9.3%.
+ The balanceable part of the MD step is 31%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 2.9%.
+
+
+NOTE: 19 % of the run time was spent communicating energies,
+      you might want to increase some nst* mdp options
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.759        0.016     4781.3
+                 (ns/day)    (hour/ns)
+Performance:       29.929        0.802
+
+Thanx for Using GROMACS - Have a Nice Day
+

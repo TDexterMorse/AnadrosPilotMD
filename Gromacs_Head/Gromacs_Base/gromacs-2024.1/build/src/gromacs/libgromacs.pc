@@ -1,0 +1,11 @@
+libdir=/usr/local/gromacs/lib
+
+Name: libgromacs
+Description: Gromacs library
+URL: http://www.gromacs.org
+Version: 2024.1
+Requires:  
+Libs.private:   
+Libs: -L${libdir} -lgromacs  -lm
+Cflags:  -I/usr/local/gromacs/include -DGMX_DOUBLE=0 -fopenmp
+

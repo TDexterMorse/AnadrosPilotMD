@@ -1,0 +1,13 @@
+# Target labels
+ fftwBuild
+# Source files and their labels
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/CMakeFiles/fftwBuild
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/CMakeFiles/fftwBuild.rule
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/CMakeFiles/fftwBuild-complete.rule
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-build.rule
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-configure.rule
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-download.rule
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-install.rule
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-mkdir.rule
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-patch.rule
+/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/src/external/build-fftw/fftwBuild-prefix/src/fftwBuild-stamp/fftwBuild-update.rule

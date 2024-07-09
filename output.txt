@@ -1,0 +1,45 @@
+Processing protein.pdb: insulin.pdb with ligand: TS4 and SMILES: CCCC1=CC=CC=C1O
+Moving protein.pdb to directories...
+Moved to /Users/dextermorse/desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Obabel
+Moved to /Users/dextermorse/desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/P2Rank
+Moved to /Users/dextermorse/desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Complex
+Moving to SMILES directory...
+Moved to /Users/dextermorse/desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/SMILEY
+Generating .mol file from SMILES...
+[16:54:03] Molecule does not have explicit Hs. Consider calling AddHs()
+MOL file 'TS4.mol' generated successfully.
+Moving generated .mol file to OBABEL directory...
+Moved TS4.mol to /Users/dextermorse/desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Obabel
+Moving to Obabel directory...
+Moved to 
+Converting ligand and protein to correct format using OBabel...
+==============================
+*** Open Babel Warning  in PerceiveBondOrders
+  Failed to kekulize aromatic bonds in OBMol::PerceiveBondOrders (title is insulin.pdb)
+
+1 molecule converted
+1 molecule converted
+1 molecule converted
+1 molecule converted
+1 molecule converted
+Extracted connections saved to JUSTBONDS.pdb
+Conversion complete.
+Conversion completed.
+Moving output files to AUTODOCK and COMPLEX directories...
+Moved TS4.pdbqt to /Users/dextermorse/desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/AutoDock
+Moved TS4.pdb to /Users/dextermorse/desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Complex
+Moving to P2Rank directory...
+Moved to /Users/dextermorse/desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/P2Rank
+rm: ./results/visualizations/: No such file or directory
+Predicting binding sites using P2Rank...
+P2Rank 2.4.2-beta.1
+
+predicting pockets for proteins from dataset [insulin.pdb]
+processing [insulin.pdb] (1/1)
+predicting pockets finished in 0 hours 0 minutes 9.257 seconds
+results saved to directory [/Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin]
+
+Finished successfully in 0 hours 0 minutes 10.124 seconds.
+Directory path: [INFO] Console - results saved to directory [/Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin]
+Directory path extract: /Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/P2Rank/p2rank/distro/test_output/predict_insulin
+Contents moved to results directory.

@@ -1,0 +1,36 @@
+                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/nbnxn-ljpme-LB/nb-cpu
+Command line:
+  gmx mdrun -notunepme -nb cpu
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 1 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 1 MPI thread
+Using 16 OpenMP threads 
+
+
+LJ-PME with Lorentz-Berthelot is not supported with SIMD kernels, falling back to plain C kernels
+
+WARNING: Using the slow plain-C kernels. This should
+not happen during routine usage on common platforms.
+starting mdrun 'POPC+water'
+20 steps,      0.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        1.158        0.072     1598.0
+                 (ns/day)    (hour/ns)
+Performance:       50.073        0.479
+
+Thanx for Using GROMACS - Have a Nice Day
+

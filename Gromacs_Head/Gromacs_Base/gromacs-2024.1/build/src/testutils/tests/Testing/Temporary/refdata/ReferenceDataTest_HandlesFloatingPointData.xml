@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="referencedata.xsl"?>
+<ReferenceData>
+  <Real Name="double">1.3333333333333333</Real>
+  <Real Name="real">1.3333333333333333</Real>
+  <Real Name="float">1.3333334</Real>
+</ReferenceData>

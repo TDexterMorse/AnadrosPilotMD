@@ -1,0 +1,51 @@
+                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/essentialdynamics/flooding1
+Command line:
+  gmx mdrun -ei /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/essentialdynamics/flooding1/sam.edi -eo flooding1.xvg
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 4 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 25 to 100, rlist from 1.05 to 1.171
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+On host ip-172-31-60-115 4 GPUs selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 4 MPI threads
+Using 8 OpenMP threads per tMPI thread
+
+ED: Initializing essential dynamics constraints.
+ED: Reading edi file /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/essentialdynamics/flooding1/sam.edi
+ED: Found 1 ED group.
+ED: Flooding 2 eigenvectors.
+ED: Initial RMSD from reference after fit = 0.254147 nm
+ED: Setting center of flooding potential (0 = average structure)
+ED: A (possibly changing) ref. projection will define the flooding potential center.
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'GUANYLIN (A-FORM) (ENDOGENOUS LIGAND TO THE HEAT STABLE in water'
+0 steps,      0.0 ps.
+
+NOTE: 7 % of the run time was spent in domain decomposition,
+      77 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.857        0.027     3187.9
+                 (ns/day)    (hour/ns)
+Performance:        6.427        3.734
+
+Thanx for Using GROMACS - Have a Nice Day
+
+ED: EV 1 flooding potential center:  5.0000e-01 (adding  0.0000e+00/timestep)
+ED: EV 2 flooding potential center: -1.0000e-01 (adding  0.0000e+00/timestep)

@@ -1,0 +1,45 @@
+# This file was created Mon Apr 22 21:47:09 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+# 
+# Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+# Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+# Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/essentialdynamics/flooding1
+# Command line:
+#   gmx mdrun -ei /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/essentialdynamics/flooding1/sam.edi -eo flooding1.xvg
+# gmx mdrun is part of G R O M A C S:
+#
+# GROMACS
+#
+@    title "Essential dynamics / flooding output"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "RMSDs (nm), projections on EVs (nm), ..."
+@TYPE xy
+# Output will be written every 1 step
+#
+# Summary of applied con/restraints for the ED group  
+# Atoms in average structure: 13
+#    monitor  : 0 vecs
+#    LINFIX   : 0 vecs
+#    LINACC   : 0 vecs
+#    RADFIX   : 0 vecs
+#    RADACC   : 0 vecs
+#    RADCON   : 0 vecs
+#    FLOODING : 2 vecs  Efl_null = -50000, harmonic
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "  RMSD to ref (nm)"
+@ s1 legend "  EV1prjFLOOD (nm)"
+@ s2 legend "  EV1-Vfl (kJ/mol)"
+@ s3 legend "  EV1-FLforces (kJ/mol/nm)"
+@ s4 legend "  EV2prjFLOOD (nm)"
+@ s5 legend "  EV2-Vfl (kJ/mol)"
+@ s6 legend "  EV2-FLforces (kJ/mol/nm)"
+#
+# Legend for 7 columns of flooding plus 0 columns of essential dynamics data:
+#       time      RMSD to ref      EV1prjFLOOD          EV1-Vfl     EV1-FLforces      EV2prjFLOOD          EV2-Vfl     EV2-FLforces
+    0.000000         0.254122      8.57443e-03      1.04687e+04      2.45713e+04      3.21008e-01      1.04687e+04     -2.10504e+04
