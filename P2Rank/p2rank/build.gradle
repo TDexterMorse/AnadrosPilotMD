@@ -1,0 +1,201 @@
+//file:noinspection SpellCheckingInspection
+//file:noinspection GroovyAssignabilityCheck
+
+buildscript {  // for "com.github.ben-manes.versions" plugin
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "com.github.ben-manes:gradle-versions-plugin:0.51.0"
+    }
+}
+
+apply plugin: "com.github.ben-manes.versions"   //  ./gradlew dependencyUpdates 
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+group = 'cz.siret'
+version = '2.4.2-beta.1'
+
+
+description = 'Ligand binding site prediction based on machine learning.'
+
+
+allprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 11
+    targetCompatibility = 11
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {url "https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/" }
+    maven {
+        url = file('lib/local-mvn-repo')
+    }
+    flatDir(dirs: 'lib')
+}
+
+sourceSets {
+    main {
+        resources {
+            exclude 'scripts/out/*'
+            exclude 'models/*'
+        }
+    }
+}
+
+processResources {
+    filter org.apache.tools.ant.filters.ReplaceTokens, tokens: [
+            "project_version": project.version
+    ]
+}
+
+task copyDependenciesToDist( type: Copy ) {
+    into "$buildDir/../distro/bin/lib"
+    from configurations.runtimeClasspath
+
+}
+
+task copyBinaryToDist( type: Copy ) {
+    dependsOn jar
+
+    into "$buildDir/../distro/bin"
+    from "$buildDir/bin"
+    include "*.jar"
+}
+
+task copyDocumentation( type: Copy ) {
+    into "$buildDir/../distro/"
+    from "$buildDir/../"
+    include "README.md", "LICENSE.txt"
+}
+
+assemble {
+    dependsOn processResources
+    dependsOn copyBinaryToDist
+    dependsOn copyDependenciesToDist // copy dependencies to distro dir
+    dependsOn copyDocumentation
+}
+
+jar {
+    archiveFileName = "p2rank.jar"
+    destinationDirectory = file("build/bin")
+
+    manifest {
+        attributes 'Main-Class': 'cz.siret.prank.program.Main'
+    }
+}
+
+clean {
+    delete "$buildDir/../distro/bin"
+    delete "$buildDir/../distro/test_output"
+}
+
+test {
+    useJUnitPlatform()
+
+    // show standard out and standard error of the test JVM(s) on the console
+    // testLogging.showStandardStreams = true
+
+    // set heap size for the test JVM(s)
+    maxHeapSize = "2g"
+    
+    def distroDir = "$project.projectDir/distro"
+    inputs.dir "$distroDir/test_data"
+    inputs.files("$distroDir/models", "$distroDir/config/default.groovy")
+
+    // listen to events in the test execution lifecycle
+    beforeTest { descriptor ->
+        logger.lifecycle("Running test: " + descriptor)
+    }
+
+    testLogging {
+        events "failed" // "standardOut", "standardError", "passed", "skipped"
+
+        showExceptions true
+        exceptionFormat "full"
+        showCauses true
+        showStackTraces true
+
+        showStandardStreams = false
+//        showStandardStreams = true
+    }
+
+    // listen to standard out and standard error of the test JVM(s)
+    //    onOutput { descriptor, event ->
+    //        logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
+    //    }
+    
+}
+
+configurations {
+    runtimeClasspath.extendsFrom implementation
+}
+
+/**
+ * Returns an int representing how mature [version] is.
+ * Higher numbers are more mature.
+ */
+static def maturityLevel(String version) {
+    /**
+     * Version qualifiers, in order from least to most mature.
+     * The most mature is to have no qualifier at all.
+     */
+    def qualifiers = ["preview", "alpha", "beta", "m", "cr", "rc"]
+    def qualifiersRegex = qualifiers.collect { /(?i).*[.\-]$it[.\-\d]*/ }
+
+    def index = qualifiersRegex.findIndexOf { version ==~ it }
+    return (index < 0) ? qualifiers.size : index
+}
+
+tasks.named("dependencyUpdates").configure {
+    rejectVersionIf {
+        def candidateMaturity = maturityLevel(it.candidate.version)
+        def currentMaturity = maturityLevel(it.currentVersion)
+        candidateMaturity < currentMaturity
+    }
+}
+
+
+dependencies {
+
+    implementation 'org.apache.groovy:groovy:4.0.21'
+
+    implementation 'org.codehaus.gpars:gpars:1.2.1'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'commons-io:commons-io:2.16.1'
+    implementation 'com.google.guava:guava:33.1.0-jre'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.univocity:univocity-parsers:2.9.1' // csv parser
+    implementation 'org.apache.commons:commons-csv:1.10.0'
+    implementation 'org.zeroturnaround:zt-zip:1.17'
+    implementation 'org.apache.commons:commons-compress:1.26.1'
+    implementation 'org.tukaani:xz:1.9'
+    implementation 'com.github.luben:zstd-jni:1.5.6-2'
+    implementation 'com.github.dpaukov:combinatoricslib3:3.4.0'
+
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.23.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.23.1'
+    implementation 'org.slf4j:jul-to-slf4j:1.7.36'         // for netlib logging messages
+
+    implementation 'org.biojava:biojava-core:7.0.2'
+    implementation 'org.biojava:biojava-alignment:7.0.2'
+    implementation 'org.biojava:biojava-structure:7.0.2-rdk1'
+
+    implementation 'org.openscience.cdk:cdk-qsarmolecular:2.9'    // for NumericalSurface class
+    implementation 'org.openscience.cdk:cdk-silent:2.9'             // for Atom class
+
+    implementation 'nz.ac.waikato.cms.weka:weka-dev:3.9.6'
+
+    implementation fileTree(dir: 'lib', include: '*.jar')
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
+}

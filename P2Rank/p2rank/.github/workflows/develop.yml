@@ -1,0 +1,32 @@
+name: Develop Build
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+
+jobs:
+  build: 
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+        java-version: [ '11', '17', '20', '21' ]
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK ${{ matrix.java-version }}
+      uses: actions/setup-java@v4
+      with:
+        java-version: ${{ matrix.java-version }}
+        distribution: 'temurin'
+    - name: Validate Gradle wrapper
+      uses: gradle/wrapper-validation-action@v2
+    - name: Build with Gradle
+      run: ./gradlew assemble
+    - name: Run unit tests
+      run: ./gradlew test
