@@ -1,5 +1,0 @@
-export CC=`which mpicc`
-export CXX=`which mpicxx`
-export CCACHE_COMPILERCHECK=content
-${CC} --version
-${CXX} --version

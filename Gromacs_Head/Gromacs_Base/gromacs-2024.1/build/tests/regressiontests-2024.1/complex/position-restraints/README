@@ -1,8 +1,0 @@
-This test case modifies aminoacids to
-* add position restraints on backbone atoms
-* convert to pbc = xyz
-* convert rcoulomb and rvdw to 1.0 nm, and
-* switch to the Verlet scheme.
-
-Note: we need to use stricter verlet-buffer-tolerance,
-since otherwise the test is unstable with small clusters.

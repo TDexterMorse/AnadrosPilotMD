@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2024-04-22T21:33:34.925" name="AllTests">
-  <testsuite name="MpiSelfTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2024-04-22T21:33:34.925">
-    <testcase name="Runs" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/testutils/tests/mpitest.cpp" line="69" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:34.925" classname="MpiSelfTest" />
-  </testsuite>
-</testsuites>

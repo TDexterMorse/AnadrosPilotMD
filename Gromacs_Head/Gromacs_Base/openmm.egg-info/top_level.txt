@@ -1,2 +1,0 @@
-gromacs-2023
-openmm-cmd

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="1" failures="0" disabled="0" errors="0" time="2.926" timestamp="2024-04-22T21:36:43.197" name="AllTests">
-  <testsuite name="BasicPropagators/PeriodicActionsTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="1.288" timestamp="2024-04-22T21:36:44.835">
-    <testcase name="PeriodicActionsAgreeWithReference/0" value_param="({ (&quot;comm-mode&quot;, &quot;linear&quot;), (&quot;integrator&quot;, &quot;md&quot;), (&quot;maxGromppWarningsTolerated&quot;, &quot;0&quot;), (&quot;nstcomm&quot;, &quot;1&quot;), (&quot;nstpcouple&quot;, &quot;0&quot;), (&quot;nsttcouple&quot;, &quot;0&quot;), (&quot;pcoupl&quot;, &quot;no&quot;), (&quot;simulationName&quot;, &quot;argon12&quot;), (&quot;tcoupl&quot;, &quot;no&quot;) }, 0x61e587c74550)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/periodicactions.cpp" line="172" status="run" result="completed" time="1.287" timestamp="2024-04-22T21:36:44.835" classname="BasicPropagators/PeriodicActionsTest" />
-  </testsuite>
-</testsuites>

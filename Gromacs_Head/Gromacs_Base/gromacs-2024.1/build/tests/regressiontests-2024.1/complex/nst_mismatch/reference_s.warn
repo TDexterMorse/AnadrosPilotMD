@@ -1,5 +1,0 @@
-WARNING 1 [file /Users/hess/regressiontests/complex/nst_mismatch/grompp.mdp]:
-  The Berendsen barostat does not generate any strictly correct ensemble,
-  and should not be used for new production simulations (in our opinion).
-  We recommend using the C-rescale barostat instead.
-

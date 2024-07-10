@@ -1,3 +1,0 @@
-autocrlf=input
-
-*.sh text eol=lf
