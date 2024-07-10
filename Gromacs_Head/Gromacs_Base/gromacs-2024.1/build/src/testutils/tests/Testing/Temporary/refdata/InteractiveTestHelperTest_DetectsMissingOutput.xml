@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="referencedata.xsl"?>
+<ReferenceData>
+  <InteractiveSession Name="Interactive">
+    <String Name="Output0"><![CDATA[
+First line
+> ]]></String>
+    <String Name="Input1"><![CDATA[
+input
+]]></String>
+    <String Name="Output1"><![CDATA[
+Second line
+> ]]></String>
+    <String Name="Input2"><![CDATA[
+input2
+]]></String>
+    <String Name="Output2"><![CDATA[
+Third line
+> ]]></String>
+    <String Name="Input3"><![CDATA[
+]]></String>
+    <String Name="Output3"><![CDATA[
+
+.
+]]></String>
+  </InteractiveSession>
+</ReferenceData>

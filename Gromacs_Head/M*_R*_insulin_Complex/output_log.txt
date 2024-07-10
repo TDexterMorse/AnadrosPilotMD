@@ -1,0 +1,184 @@
+Error occurred while extracting ligand TS4.
+Protein file M*_R*_insulin_Complex.pdb copied without lines containing TS4 and saved as TS4_Clean.pdb
+Start value not found in TS4.pdb
+Protonate the Ligand Molecule
+0 molecules converted
+Nonstandard header found: . Please delete header lines until the TRIPOS molecule definition.
+Formatted .mol2 file outputted as:  TS4.mol2
+./complete13.sh: line 41: antechamber: command not found
+./complete13.sh: line 43: parmchk2: command not found
+0 molecules converted
+./complete13.sh: line 53: pdb4amber: command not found
+./complete13.sh: line 66: tleap: command not found
+Traceback (most recent call last):
+  File "ambercharmconvert.py", line 2, in <module>
+    import parmed as pmd
+ImportError: No module named parmed
+rm: ions.mdp: No such file or directory
+rm: nvt.mdp: No such file or directory
+rm: npt.mdp: No such file or directory
+rm: em.mdp: No such file or directory
+rm: md.in: No such file or directory
+rm: md.mdp: No such file or directory
+rm: ie.mdp: No such file or directory
+grep: gromacs.top: No such file or directory
+Marker '; name    at.num    mass    charge ptype  sigma      epsilon' not found in the file.
+sed: 1: "-1r iontypes.txt
+": invalid command code -
+Protein Restraint inserted successfully.
+sed: 1: "-1r ligandres.txt
+": invalid command code -
+LIGAND RESTRAINT ADDED
+WATER FORCE ADDED
+                     :-) GROMACS - gmx editconf, 2023.3 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M*_R*_insulin_Complex
+Command line:
+  gmx editconf -f gromacs.gro -o newbox.gro -bt cubic -d 2.0 -c
+
+
+-------------------------------------------------------
+Program:     gmx editconf, version 2023.3
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 271)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -f
+    File 'gromacs.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                     :-) GROMACS - gmx solvate, 2023.3 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M*_R*_insulin_Complex
+Command line:
+  gmx solvate -cp newbox.gro -cs spc216.gro -p gromacs.top -o solv.gro -maxsol 10000 -radius 0.2
+
+
+-------------------------------------------------------
+Program:     gmx solvate, version 2023.3
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 271)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -cp
+    File 'newbox.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+############## Neutralize Charge ######################
+                      :-) GROMACS - gmx grompp, 2023.3 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M*_R*_insulin_Complex
+Command line:
+  gmx grompp -f ions.mdp -c solv.gro -p gromacs.top -o ions.tpr -maxwarn 5
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2023.3
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 271)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'solv.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                      :-) GROMACS - gmx genion, 2023.3 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M*_R*_insulin_Complex
+Command line:
+  gmx genion -s ions.tpr -o solv_ions.gro -p gromacs.top -pname NA -nname CL -neutral
+
+
+-------------------------------------------------------
+Program:     gmx genion, version 2023.3
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 271)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -s
+    File 'ions.tpr' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2023.3 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M*_R*_insulin_Complex
+Command line:
+  gmx grompp -f em.mdp -c solv_ions.gro -p gromacs.top -o em.tpr -maxwarn 50
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2023.3
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 271)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'solv_ions.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /Users/dextermorse/Desktop/MDIBL_COMPLETE2/TESTAGAINSTGROMACSTUTORIAL/Gromacs_Head/M*_R*_insulin_Complex
+Command line:
+  gmx mdrun -deffnm em
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2023.3
+Source file: src/gromacs/options/options.cpp (line 177)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+Are you satisfied with the result? (yes/no)

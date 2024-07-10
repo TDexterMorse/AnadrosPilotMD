@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="16" failures="0" disabled="0" errors="0" time="0" timestamp="2024-04-22T21:33:30.062" name="AllTests">
+  <testsuite name="NBlibTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2024-04-22T21:33:30.062">
+    <testcase name="isRealValued" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/setup.cpp" line="59" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NBlibTest" />
+    <testcase name="checkNumericValuesHasNan" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/setup.cpp" line="69" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NBlibTest" />
+    <testcase name="checkNumericValuesHasInf" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/setup.cpp" line="81" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NBlibTest" />
+    <testcase name="GeneratedVelocitiesAreCorrect" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/setup.cpp" line="94" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NBlibTest" />
+    <testcase name="generateVelocitySize" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/setup.cpp" line="104" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NBlibTest" />
+    <testcase name="generateVelocityCheckNumbers" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/setup.cpp" line="112" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NBlibTest" />
+  </testsuite>
+  <testsuite name="NblibTraitsUtils" tests="10" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2024-04-22T21:33:30.062">
+    <testcase name="FuseTwo" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="51" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="Fuse" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="63" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="Repeat" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="76" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="FindIndexTuple1" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="87" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="FindIndexTuple2" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="99" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="FindIndexTypeList1" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="113" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="FindIndexTypeList2" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="125" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="Contains" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="140" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="FindIndexTupleRepeated" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="153" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+    <testcase name="FindIndexTypeListRepeated" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/util/tests/traits.cpp" line="168" status="run" result="completed" time="0" timestamp="2024-04-22T21:33:30.062" classname="NblibTraitsUtils" />
+  </testsuite>
+</testsuites>

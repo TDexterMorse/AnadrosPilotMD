@@ -1,0 +1,18 @@
+MD simulation
+&cntrl
+  imin = 0,         ! 0=MD, 1=Minimization
+  ntx = 1,          ! 1=Read initial coordinates and velocities from inpcrd
+  irest = 0,        ! 0=Start new run, 1=Restart previous run
+  nstlim = 10000,   ! Number of MD steps
+  dt = 0.002,       ! Time step in ps (2 fs)
+  ntt = 3,          ! Temperature coupling (3=Berendsen)
+  temp0 = 300.0,    ! Temperature in K
+  ntp = 1,          ! Pressure coupling (1=Constant pressure)
+  pres0 = 1.0,      ! Pressure in atm
+  ntb = 2,          ! Boundary conditions (2=Constant pressure periodic)
+  ntpr = 1000,      ! Print frequency for output
+  ntwx = 1000,      ! Write coordinates to trajectory file
+  cut = 10.0,       ! Nonbonded cutoff in Angstroms
+  ntr = 0,          ! Number of restraining potentials
+  ig = -1,          ! Random number seed (set to -1 for auto-generate)
+  / 

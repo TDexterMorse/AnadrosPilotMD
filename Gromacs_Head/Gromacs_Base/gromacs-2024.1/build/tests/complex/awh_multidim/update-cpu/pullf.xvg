@@ -1,0 +1,26 @@
+# This file was created Mon Apr 22 21:40:41 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+# 
+# Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+# Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+# Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/awh_multidim/update-cpu
+# Command line:
+#   gmx mdrun -update cpu -notunepme
+# gmx mdrun is part of G R O M A C S:
+#
+# GROMACS
+#
+@    title "Pull force"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Force (kJ/mol/nm, kJ/mol/rad)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "1"
+@ s1 legend "2"
+0.0000	8.27833	-5.7494e-06

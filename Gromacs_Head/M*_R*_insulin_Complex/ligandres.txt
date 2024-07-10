@@ -1,0 +1,21 @@
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_TS4.itp"
+#endif
+
+; Include ML2_GMX.itp topology
+;#include "./TS4.acpype/.itp"
+
+; Include water topology
+#include "amber03.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "amber03.ff/ions2.itp"
+

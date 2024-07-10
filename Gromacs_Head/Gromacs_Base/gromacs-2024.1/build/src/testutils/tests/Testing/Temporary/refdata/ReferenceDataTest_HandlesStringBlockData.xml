@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="referencedata.xsl"?>
+<ReferenceData>
+  <String Name="block"><![CDATA[
+Line1
+Line2
+]]></String>
+  <String Name="string">Test</String>
+</ReferenceData>

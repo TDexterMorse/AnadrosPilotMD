@@ -1,0 +1,35 @@
+                      :-) GROMACS - gmx grompp, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/awh_multibias
+Command line:
+  gmx grompp -f /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/awh_multibias/grompp.mdp -c /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/awh_multibias/conf -r /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/awh_multibias/conf -p /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/awh_multibias/topol -maxwarn 10 -n /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/awh_multibias/index
+
+Ignoring obsolete mdp entry 'gb-algorithm'
+Ignoring obsolete mdp entry 'nstgbradii'
+Ignoring obsolete mdp entry 'rgbradii'
+Ignoring obsolete mdp entry 'gb-epsilon-solvent'
+Ignoring obsolete mdp entry 'gb-saltconc'
+Ignoring obsolete mdp entry 'gb-obc-alpha'
+Ignoring obsolete mdp entry 'gb-obc-beta'
+Ignoring obsolete mdp entry 'gb-obc-gamma'
+Ignoring obsolete mdp entry 'gb-dielectric-offset'
+Ignoring obsolete mdp entry 'sa-algorithm'
+Ignoring obsolete mdp entry 'sa-surface-tension'
+Ignoring obsolete mdp entry 'ns-type'
+Generating 1-4 interactions: fudge = 0.5
+Pull group 1 'C_&_r_1' has 1 atoms
+Pull group 2 'N_&_r_2' has 1 atoms
+Pull group 3 'CA' has 1 atoms
+Pull group 4 'C_&_r_2' has 1 atoms
+Pull group 5 'N_&_r_3' has 1 atoms
+Number of degrees of freedom in T-Coupling group System is 51.00
+Pull group  natoms  pbc atom  distance at start  reference at t=0
+       1         1         0
+       2         1         0     179.098 deg          0.000 deg
+       2         1         0
+       3         1         0     158.667 deg          0.000 deg
+
+Thanx for Using GROMACS - Have a Nice Day
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="0" disabled="0" errors="0" time="1.486" timestamp="2024-04-22T21:33:32.972" name="AllTests">
+  <testsuite name="TprReaderTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0.013" timestamp="2024-04-22T21:33:34.445">
+    <testcase name="SimDBTprIsCreated" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/tests/tpr.cpp" line="83" status="run" result="completed" time="0.005" timestamp="2024-04-22T21:33:34.445" classname="TprReaderTest" />
+    <testcase name="Spc2Reads" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/tests/tpr.cpp" line="88" status="run" result="completed" time="0.002" timestamp="2024-04-22T21:33:34.450" classname="TprReaderTest" />
+    <testcase name="ArgonImportedDataIsCorrect" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/tests/tpr.cpp" line="95" status="run" result="completed" time="0.002" timestamp="2024-04-22T21:33:34.453" classname="TprReaderTest" />
+    <testcase name="FCfromTprDataWorks" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/api/nblib/tests/tpr.cpp" line="125" status="run" result="completed" time="0.002" timestamp="2024-04-22T21:33:34.456" classname="TprReaderTest" />
+  </testsuite>
+</testsuites>

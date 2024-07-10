@@ -1,0 +1,21 @@
+                     :-) GROMACS - gmx make_edi, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/essentialdynamics/radfix
+Command line:
+  gmx make_edi -f /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/essentialdynamics/radfix/eigenvec.trr -outfrq 1 -radfix 1-2 -radstep 0.002 -o sam.edi
+
+trr version: GMX_trn_file (single precision)
+Read non mass weighted reference structure with 4 atoms from /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/essentialdynamics/radfix/eigenvec.trr
+Read non mass weighted average/minimum structure with 4 atoms from /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/essentialdynamics/radfix/eigenvec.trr
+Read 3 eigenvectors (for 4 atoms)
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+Group     0 (         System) has     4 elements
+Group     1 (          Other) has     4 elements
+Group     2 (            DRG) has     4 elements
+Select a group: 
+Thanx for Using GROMACS - Have a Nice Day
+

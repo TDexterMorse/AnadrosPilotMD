@@ -1,0 +1,31 @@
+                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/freeenergy/vdwalone/nb-cpu
+Command line:
+  gmx mdrun -ntmpi 8 -notunepme -nb cpu
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+Changing nstlist from 10 to 100, rlist from 1 to 1
+
+Update groups can not be used for this system because atoms that are (in)directly constrained together are interdispersed with other atoms
+
+Using 8 MPI threads
+Using 6 OpenMP threads per tMPI thread
+
+starting mdrun 'OUT in water'
+60 steps,      0.1 ps.
+
+Writing final coordinates.
+
+NOTE: 9 % of the run time was spent communicating energies,
+      you might want to increase some nst* mdp options
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        2.740        0.057     4793.1
+                 (ns/day)    (hour/ns)
+Performance:       92.201        0.260
+
+Thanx for Using GROMACS - Have a Nice Day
+

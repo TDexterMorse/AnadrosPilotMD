@@ -1,0 +1,33 @@
+                      :-) GROMACS - gmx mdrun, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/freeenergy/coulandvdwsequential_coul/nb-cpu
+Command line:
+  gmx mdrun -notunepme -nb cpu
+
+Reading file topol.tpr, VERSION 2024.1 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 20 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Changing nstlist from 10 to 100, rlist from 1 to 1
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 20 MPI threads
+Using 2 OpenMP threads per tMPI thread
+
+starting mdrun 'AA'
+40 steps,      0.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        2.001        0.052     3851.7
+                 (ns/day)    (hour/ns)
+Performance:       68.197        0.352
+
+Thanx for Using GROMACS - Have a Nice Day
+

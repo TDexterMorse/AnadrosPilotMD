@@ -1,0 +1,27 @@
+                      :-) GROMACS - gmx grompp, 2024.1 (-:
+
+Executable:   /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/bin/gmx
+Data prefix:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1 (source tree)
+Working dir:  /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/complex/sw
+Command line:
+  gmx grompp -f /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/sw/grompp.mdp -c /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/sw/conf -r /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/sw/conf -p /home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/build/tests/regressiontests-2024.1/complex/sw/topol -maxwarn 10
+
+Ignoring obsolete mdp entry 'optimize_fft'
+Ignoring obsolete mdp entry 'rlistlong'
+Ignoring obsolete mdp entry 'nstcalclr'
+Ignoring obsolete mdp entry 'ns_type'
+
+NOTE 1 [file topol.top, line 162]:
+  In moleculetype 'SW' 1 atoms are not bound by a potential or constraint
+  to any other atom in the same moleculetype. Although technically this
+  might not cause issues in a simulation, this often means that the user
+  forgot to add a bond/potential/constraint or put multiple molecules in
+  the same moleculetype definition by mistake. Run with -v to get
+  information for each atom.
+
+Number of degrees of freedom in T-Coupling group System is 1509.00
+
+There was 1 NOTE
+
+Thanx for Using GROMACS - Have a Nice Day
+

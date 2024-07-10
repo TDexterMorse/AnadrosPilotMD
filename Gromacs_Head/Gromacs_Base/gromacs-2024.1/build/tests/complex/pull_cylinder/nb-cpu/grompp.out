@@ -1,0 +1,19 @@
+Generated 165 of the 1596 non-bonded parameter combinations
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+turning all bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Hexane'
+
+turning all bonds into constraints...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 298 K
+
+Calculated rlist for 1x1 atom pair-list as 0.974 nm, buffer size 0.074 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 0.947 nm, buffer size 0.047 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+This run will generate roughly 0 Mb of data

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="112" failures="0" disabled="0" errors="0" time="16.165" timestamp="2024-04-22T21:36:09.797" name="AllTests">
+  <testsuite name="MimicTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="1.619" timestamp="2024-04-22T21:36:11.360">
+    <testcase name="OneQuantumMol" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/mimic.cpp" line="101" status="run" result="completed" time="0.425" timestamp="2024-04-22T21:36:11.360" classname="MimicTest" />
+    <testcase name="AllQuantumMol" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/mimic.cpp" line="116" status="run" result="completed" time="0.398" timestamp="2024-04-22T21:36:11.785" classname="MimicTest" />
+    <testcase name="TwoQuantumMol" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/mimic.cpp" line="131" status="run" result="completed" time="0.396" timestamp="2024-04-22T21:36:12.183" classname="MimicTest" />
+    <testcase name="BondCuts" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/mimic.cpp" line="145" status="run" result="completed" time="0.4" timestamp="2024-04-22T21:36:12.580" classname="MimicTest" />
+  </testsuite>
+  <testsuite name="DomainDecomposition/DomDecSpecialCasesTest" tests="96" failures="0" disabled="0" skipped="76" errors="0" time="5.882" timestamp="2024-04-22T21:36:13.862">
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmecpu_updatecpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.008" timestamp="2024-04-22T21:36:13.862" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmecpu_updatecpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.870" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmecpu_updatecpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.870" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmecpu_updategpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.870" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmecpu_updategpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.870" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmecpu_updategpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.870" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmegpu_updatecpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.870" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmegpu_updatecpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.870" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmegpu_updatecpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.871" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmegpu_updategpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.871" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmegpu_updategpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.871" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbcpu_pmegpu_updategpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:13.871" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmecpu_updatecpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.407" timestamp="2024-04-22T21:36:13.871" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmecpu_updatecpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.279" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmecpu_updatecpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.279" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmecpu_updategpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.402" timestamp="2024-04-22T21:36:14.279" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmecpu_updategpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Can not use GPU update and CPU PME on a separate rank
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmecpu_updategpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmegpu_updatecpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmegpu_updatecpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmegpu_updatecpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmegpu_updategpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmegpu_updategpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_No_coupling_nbgpu_pmegpu_updategpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmecpu_updatecpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.007" timestamp="2024-04-22T21:36:14.682" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmecpu_updatecpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.690" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmecpu_updatecpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.690" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmecpu_updategpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.690" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmecpu_updategpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmecpu_updategpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmegpu_updatecpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmegpu_updatecpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmegpu_updatecpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmegpu_updategpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmegpu_updategpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbcpu_pmegpu_updategpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmecpu_updatecpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.408" timestamp="2024-04-22T21:36:14.691" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmecpu_updatecpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.099" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmecpu_updatecpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.100" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmecpu_updategpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.409" timestamp="2024-04-22T21:36:15.100" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmecpu_updategpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.509" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Can not use GPU update and CPU PME on a separate rank
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmecpu_updategpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.509" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot have separate PME ranks when PME is not used
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmegpu_updatecpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.509" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmegpu_updatecpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.509" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmegpu_updatecpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.509" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmegpu_updategpu_npme0" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.509" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmegpu_updategpu_npme1" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.509" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/RF_TemperatureAndPressure_coupling_nbgpu_pmegpu_updategpu_npme2" value_param="((4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.510" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME to GPU when PME is not used&#x0A;  Cannot have separate PME ranks when PME is not used&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME to GPU when PME is not used
+  Cannot have separate PME ranks when PME is not used
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmecpu_updatecpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.147" timestamp="2024-04-22T21:36:15.510" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmecpu_updatecpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.099" timestamp="2024-04-22T21:36:15.657" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmecpu_updatecpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.757" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmecpu_updategpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.757" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmecpu_updategpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.757" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmecpu_updategpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.757" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmegpu_updatecpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.758" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmegpu_updatecpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.758" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmegpu_updatecpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.758" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmegpu_updategpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.758" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmegpu_updategpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.758" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbcpu_pmegpu_updategpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:15.758" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmecpu_updatecpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.419" timestamp="2024-04-22T21:36:15.758" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmecpu_updatecpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.22" timestamp="2024-04-22T21:36:16.178" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmecpu_updatecpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:16.398" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmecpu_updategpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.413" timestamp="2024-04-22T21:36:16.398" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmecpu_updategpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:16.811" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Can not use GPU update and CPU PME on a separate rank
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmecpu_updategpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:16.811" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmegpu_updatecpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:16.811" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmegpu_updatecpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.504" timestamp="2024-04-22T21:36:16.811" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmegpu_updatecpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.316" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmegpu_updategpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.316" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmegpu_updategpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.4" timestamp="2024-04-22T21:36:17.316" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_No_coupling_nbgpu_pmegpu_updategpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.716" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmecpu_updatecpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.023" timestamp="2024-04-22T21:36:17.716" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmecpu_updatecpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.02" timestamp="2024-04-22T21:36:17.739" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmecpu_updatecpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.760" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmecpu_updategpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.760" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmecpu_updategpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.760" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmecpu_updategpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.761" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmegpu_updatecpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.761" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmegpu_updatecpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.761" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmegpu_updatecpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.761" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmegpu_updategpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.761" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmegpu_updategpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.761" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbcpu_pmegpu_updategpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:17.761" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot offload PME or Update to GPU without offloading Nonbondeds&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot offload PME or Update to GPU without offloading Nonbondeds
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmecpu_updatecpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.535" timestamp="2024-04-22T21:36:17.761" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmecpu_updatecpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.224" timestamp="2024-04-22T21:36:18.297" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmecpu_updatecpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:18.521" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmecpu_updategpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.421" timestamp="2024-04-22T21:36:18.521" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmecpu_updategpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:18.943" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Can not use GPU update and CPU PME on a separate rank
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmecpu_updategpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:18.943" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Can not use GPU update and CPU PME on a separate rank&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Can not use GPU update and CPU PME on a separate rank
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmegpu_updatecpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:18.943" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmegpu_updatecpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.401" timestamp="2024-04-22T21:36:18.943" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmegpu_updatecpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:19.344" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmegpu_updategpu_npme0" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;00-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:19.345" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use GPU PME offload with multiple PME+PP ranks&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use GPU PME offload with multiple PME+PP ranks
+]]></skipped>
+    </testcase>
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmegpu_updategpu_npme1" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="completed" time="0.399" timestamp="2024-04-22T21:36:19.345" classname="DomainDecomposition/DomDecSpecialCasesTest" />
+    <testcase name="EmptyDomain/PME_TemperatureAndPressure_coupling_nbgpu_pmegpu_updategpu_npme2" value_param="((4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;), (4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;01-00 00-00&gt;, 4-byte object &lt;02-00 00-00&gt;))" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp" line="361" status="run" result="skipped" time="0" timestamp="2024-04-22T21:36:19.744" classname="DomainDecomposition/DomDecSpecialCasesTest">
+      <skipped message="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372&#x0A;Test configuration is invalid:&#x0A;  Cannot use more than one separate PME rank with GPU PME&#x0A;  Cannot use two separate PME ranks when there are only two ranks total&#x0A;"><![CDATA[/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/domain_decomposition.cpp:372
+Test configuration is invalid:
+  Cannot use more than one separate PME rank with GPU PME
+  Cannot use two separate PME ranks when there are only two ranks total
+]]></skipped>
+    </testcase>
+  </testsuite>
+  <testsuite name="MinimizersWorkWithConstraints/EnergyMinimizationTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="2.905" timestamp="2024-04-22T21:36:20.539">
+    <testcase name="WithinTolerances/0" value_param="(&quot;tip3p5&quot;, &quot;steep&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.606" timestamp="2024-04-22T21:36:20.539" classname="MinimizersWorkWithConstraints/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/1" value_param="(&quot;tip3p5&quot;, &quot;cg&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.607" timestamp="2024-04-22T21:36:21.145" classname="MinimizersWorkWithConstraints/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/2" value_param="(&quot;glycine_vacuo&quot;, &quot;steep&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.443" timestamp="2024-04-22T21:36:21.753" classname="MinimizersWorkWithConstraints/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/3" value_param="(&quot;glycine_vacuo&quot;, &quot;cg&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.441" timestamp="2024-04-22T21:36:22.196" classname="MinimizersWorkWithConstraints/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/4" value_param="(&quot;alanine_vsite_vacuo&quot;, &quot;steep&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.401" timestamp="2024-04-22T21:36:22.638" classname="MinimizersWorkWithConstraints/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/5" value_param="(&quot;alanine_vsite_vacuo&quot;, &quot;cg&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.404" timestamp="2024-04-22T21:36:23.039" classname="MinimizersWorkWithConstraints/EnergyMinimizationTest" />
+  </testsuite>
+  <testsuite name="MinimizersWork/EnergyMinimizationTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="1.725" timestamp="2024-04-22T21:36:24.237">
+    <testcase name="WithinTolerances/0" value_param="(&quot;argon12&quot;, &quot;steep&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.403" timestamp="2024-04-22T21:36:24.237" classname="MinimizersWork/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/1" value_param="(&quot;argon12&quot;, &quot;cg&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.399" timestamp="2024-04-22T21:36:24.641" classname="MinimizersWork/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/2" value_param="(&quot;argon12&quot;, &quot;l-bfgs&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.002" timestamp="2024-04-22T21:36:25.040" classname="MinimizersWork/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/3" value_param="(&quot;glycine_no_constraints_vacuo&quot;, &quot;steep&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.438" timestamp="2024-04-22T21:36:25.043" classname="MinimizersWork/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/4" value_param="(&quot;glycine_no_constraints_vacuo&quot;, &quot;cg&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.442" timestamp="2024-04-22T21:36:25.482" classname="MinimizersWork/EnergyMinimizationTest" />
+    <testcase name="WithinTolerances/5" value_param="(&quot;glycine_no_constraints_vacuo&quot;, &quot;l-bfgs&quot;)" file="/home/ubuntu/W4GROMACSPIPE/Gromacs_Head/Gromacs_Base/gromacs-2024.1/src/programs/mdrun/tests/minimize.cpp" line="97" status="run" result="completed" time="0.038" timestamp="2024-04-22T21:36:25.924" classname="MinimizersWork/EnergyMinimizationTest" />
+  </testsuite>
+</testsuites>
