@@ -53,59 +53,7 @@ The GAFF2 (General AMBER Force Field 2) is a versatile force field within AMBERT
 
 ## Installation:
 
-
-# Mac - M2 Silicon
-
-
-
-
-
-
-
-
-# NVIDIA
-
-## CUDA Toolkit Installation:
-
-For GPU enabled simulations we will need to have CUDA installed on our machines. The exact method of installation is architecture specific so please consult this CUDA driver decisions tree for a device specific installation protocol: [CUDA Driver](https://developer.nvidia.com/cuda-downloads)
-
-## Gromacs Install
-
-```
-wget ftp://ftp.gromacs.org/gromacs/gromacs-2024.1.tar.gz
-tar xfz gromacs-2024.1.tar.gz
-cd gromacs-2024.1
-mkdir build
-cd build
-cmake -D CMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc \
-      -D GMX_BUILD_OWN_FFTW=ON \
-      -D REGRESSIONTEST_DOWNLOAD=ON \
-      -D GMX_GPU=CUDA \
-      ..
-make
-make check
-sudo make install
-
-```
-
-### And Source Environment
-
-```
-source /usr/local/gromacs/bin/GMXRC
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-
-```
-
-### Verify CUDA and GROMACS installations:
-
-```
-nvcc --version  # Check CUDA version
-gmx --version   # Check GROMACS version and CUDA support
-
-```
-
-
-
+See `install.md`
 
 ## Usage
 
@@ -114,9 +62,6 @@ This pipeline starts with a protein structure file and a small molecule ligand's
 
 
 #### WorkFLow
-
-
-
 
 
 The easiest implementation is to place your protein file in the $BASE directory, then run the command `./RUNALL.sh <alphafold protein .pdb> <unique ligand name> <"Smiles Representation of Ligand">`
