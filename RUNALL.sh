@@ -85,8 +85,6 @@ rm -r ./results/visualizations/
 echo "Predicting binding sites using P2Rank..."
 ./predict_prank3.sh "$PROTEIN_PDB"
 
-exit 1
-
 echo "$PROTEIN_PDB"
 
 # Move the output files to AUTODOCK and COMPLEX directories
